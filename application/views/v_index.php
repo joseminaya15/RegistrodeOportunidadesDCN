@@ -30,6 +30,7 @@
 					<h2 class="title">Moor insights: Hybrid IT helps businesses navigate through digital transformation</h2>
 				</div>
 				<div class="contenido col-sm-6 col-xs-12">
+					<h2>Overview</h2>
 					<p>As businesses drive for agility in the era of digital disruption, many are finding public cloud security, compliance, and performance may not meet their needs. Instead, they need a flexible, software-defined, scalable and composable hybrid IT environment to operate across datacenter, private and public clouds and the edge of the network.</p>
 					<p>Download the paper to learn more.</p>
 					<img src="public/img/imagen.jpg">
