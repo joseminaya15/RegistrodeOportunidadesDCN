@@ -94,6 +94,7 @@
 	<script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/i18n/defaults-es_ES.min.js?v=<?php echo time();?>"></script>
 	<script src="<?php echo RUTA_PLUGINS?>mdl/material.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.min.js?v=<?php echo time();?>"></script>
+    <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>index.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
     	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {

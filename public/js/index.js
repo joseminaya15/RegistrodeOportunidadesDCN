@@ -10,8 +10,13 @@ function registrar() {
 	var productos   = $('#productos').val();
 	var attach      = $('#attach').val();
 
+	if(Nombre == '' && Apellido == '' && email == '' && re_email == '' && rol == '' && canal == '' && oportunidad == '' && cliente == '' && productos == '' && attach == '') {
+		console.log('entra');
+		validarCampos();
+	}
 	if(Nombre == null || Nombre == '') {
 		$('#Nombre').css('border-color','red');
+		msj('error', 'Ingrese su nombre');
 		return;
 	}
 	if(Apellido == null || Apellido == '') {
@@ -129,4 +134,23 @@ function soloLetras(e) {
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
+}
+
+function validarCampos(){
+	var $inputs = $('form :input');
+	var formvalido = true;
+	$inputs.each(function() {
+		if(isEmpty($(this).val())){
+				$(this).css('border-color','red');
+				formvalido = false;
+		}else{
+				$(this).css('border-color','');
+		}
+	});
+	return formvalido;
+}
+function isEmpty(val){
+	if(jQuery.trim(val).length != 0)
+    	return false;
+		return true;
 }
