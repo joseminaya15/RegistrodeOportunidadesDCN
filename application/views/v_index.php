@@ -75,6 +75,9 @@
 							<option>Hyperconverged u otros</option>
 						</select>
 				    </div>
+				    <div class="col-xs-12">
+			    		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Registrarse</button>
+				    </div>
 				</div>
 			</div>
 		</div>
