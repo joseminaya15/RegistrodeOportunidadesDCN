@@ -7,6 +7,11 @@ body{
 h2{
 	font-family: 'RobotoBold'
 }
+h2.subtitle{
+	font-size: 20px;
+    margin: 5px 0;
+    line-height: 24px;
+}
 .mdl-select{
 	margin: 15px 0;
 }
