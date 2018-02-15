@@ -35,6 +35,10 @@
 				</div>
 				<div class="col-sm-6 col-xs-12">
 					<div class="form-group col-xs-12">
+					    <label for="apellido">Nombre</label>
+					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+				    </div>
+					<div class="form-group col-xs-12">
 					    <label for="apellido">Apellido</label>
 					    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
 				    </div>
@@ -63,20 +67,20 @@
 					    <input type="text" class="form-control" id="cliente" placeholder="Cliente">
 				    </div>
 				    <div class="mdl-select col-xs-12">
-				    	<select class="selectpicker" title="Productos asociados a la oportunidad">
-							<option>FlexFabric Promo TOR</option>
-							<option>FlexFabric TOR (no Promo)</option>
+				    	<select class="selectpicker" title="Productos asociados a la oportunidad" id="productos">
+							<option value="FlexFabric Promo TOR">FlexFabric Promo TOR</option>
+							<option value="FlexFabric TOR (no Promo)">FlexFabric TOR (no Promo)</option>
 						</select>
 				    </div>
 				    <div class="mdl-select col-xs-12">
-				    	<select class="selectpicker" title="El Attach de DCN se realizó sobre">
-							<option>Servidores</option>
-							<option>Almacenamiento</option>
-							<option>Hyperconverged u otros</option>
+				    	<select class="selectpicker" title="El Attach de DCN se realizó sobre" id="attach">
+							<option value="Servidores">Servidores</option>
+							<option value="Almacenamiento">Almacenamiento</option>
+							<option value="Hyperconverged u otros">Hyperconverged u otros</option>
 						</select>
 				    </div>
 				    <div class="col-xs-12">
-			    		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Registrarse</button>
+			    		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()">Registrarse</button>
 				    </div>
 				</div>
 			</div>
