@@ -31,3 +31,10 @@ h2{
     box-shadow: none;
     border: 1px solid #C6C9CA;
 }
+
+@media ( max-width: 768px ){
+	h2.title{
+	    font-size: 25px;
+		line-height: 28px;
+	}
+}
