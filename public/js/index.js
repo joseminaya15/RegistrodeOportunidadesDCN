@@ -26,7 +26,7 @@ function registrar() {
 		try{
         	data = JSON.parse(data);
         	if(data.error == 0){
-				
+				limpiarCampos();
         	}else {
         		return;
         	}
@@ -34,4 +34,17 @@ function registrar() {
         msj('error',err.message);
       }
 	});
+}
+
+function limpiarCampos() {
+	var Nombre 		= $('#Nombre').val(null);
+	var Apellido 	= $('#Apellido').val(null);
+	var email 		= $('#email').val(null);
+	var re_email    = $('#correo').val(null);
+	var rol 		= $('#rol').val(null);
+	var canal 		= $('#canal').val(null);
+	var oportunidad = $('#oportunidad').val(null);
+	var cliente     = $('#cliente').val(null);
+	var productos   = $('#productos').val(null);
+	var attach      = $('#attach').val(null);
 }
