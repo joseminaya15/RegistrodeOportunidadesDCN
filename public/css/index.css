@@ -1,6 +1,33 @@
+body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	font-family: 'RobotoRegular';
+}
+h2{
+	font-family: 'RobotoBold'
+}
 .mdl-select{
 	margin: 15px 0;
 }
 .mdl-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
 	width: 100%;
+}
+.contenido img{
+	width: 100%;
+}
+.form-control{
+    border-radius: 0;
+    height: 50px;
+    border: 1px solid #C6C9CA;
+}
+.bootstrap-select>.dropdown-toggle.bs-placeholder, 
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active, 
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus, 
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover{
+	height: 50px;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid #C6C9CA;
 }

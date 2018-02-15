@@ -29,11 +29,12 @@
 				<div class="col-xs-12">
 					<h2>Moor insights: Hybrid IT helps businesses navigate through digital transformation</h2>
 				</div>
-				<div class="col-sm-6 col-xs-12">
+				<div class="contenido col-sm-6 col-xs-12">
 					<p>As businesses drive for agility in the era of digital disruption, many are finding public cloud security, compliance, and performance may not meet their needs. Instead, they need a flexible, software-defined, scalable and composable hybrid IT environment to operate across datacenter, private and public clouds and the edge of the network.</p>
 					<p>Download the paper to learn more.</p>
+					<img src="public/img/imagen.jpg">
 				</div>
-				<div class="col-sm-6 col-xs-12">
+				<div class="formulario col-sm-6 col-xs-12">
 					<div class="form-group col-xs-12">
 					    <label for="apellido">Apellido</label>
 					    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
