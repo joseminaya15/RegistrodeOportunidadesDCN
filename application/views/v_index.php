@@ -35,7 +35,7 @@
 					<p>Download the paper to learn more.</p>
 					<img src="public/img/imagen.jpg">
 				</div>
-				<div class="formulario col-sm-6 col-xs-12">
+				<form class="formulario col-sm-6 col-xs-12">
 					<div class="form-group col-xs-12">
 					    <label for="apellido">Nombre</label>
 					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
@@ -84,7 +84,7 @@
 				    <div class="col-xs-12">
 			    		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()">Registrarse</button>
 				    </div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</section>
