@@ -6,6 +6,7 @@ class Inicio extends CI_Controller {
 	function __construct() {
         parent::__construct();
         $this->load->helper("url");//BORRAR CACHÉ DE LA PÁGINA
+        $this->load->model('M_solicitud');
         $this->output->set_header('Last-Modified:'.gmdate('D, d M Y H:i:s').'GMT');
         $this->output->set_header('Cache-Control: no-store, no-cache, must-revalidate');
         $this->output->set_header('Cache-Control: post-check=0, pre-check=0',false);
@@ -43,8 +44,8 @@ class Inicio extends CI_Controller {
                                  'Nombre_cliente' => $cliente,
                                  'Productos'      => $productos,
                                  'attach'         => $attach,
-                             	 'fecha_cierre'   => '15/02/2018',
-                             	 'Id_pers' 		  => $arrayInsertPers['Id']);
+                             	 'fecha_cierre'   => '15-02-2018',
+                             	 'Id_pers' 		  => $datoInsertPers['Id']);
             $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'oportunidad');
             /*$session = array('nombre_completo' => $nombre_completo,
                              'Empresa'         => $empresa,
