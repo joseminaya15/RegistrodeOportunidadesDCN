@@ -9,6 +9,7 @@ function registrar() {
 	var cliente     = $('#cliente').val();
 	var productos   = $('#productos').val();
 	var attach      = $('#attach').val();
+	var fecha		= $('#fecha').val();
 
 	if(Nombre == '' && Apellido == '' && email == '' && re_email == '' && rol == '' && canal == '' && oportunidad == '' && cliente == '' && productos == '' && attach == '') {
 		validarCampos();
@@ -71,22 +72,24 @@ function registrar() {
 		$('#cliente').css('border-color','red');
 		return;
 	}
-	console.log(productos);
 	if(productos == null || productos == '') {
 		msj('error', 'Ingrese los productos');
 		$('#productos').css('border-color','red');
 		return;
 	}else {
-		console.log('entra');
 		$('#productos').parents().find('.btn-default').css('border-color','#C6C9CA');
 	}
-	console.log(attach);
 	if(attach == null || attach == '') {
 		msj('error', 'Ingrese el Attach de DCN que se realizó');
 		$('#attach').css('border-color','red');
 		return;
 	}else {
 		$('#attach').css('border-color','#C6C9CA');
+	}
+	if(fecha == null || fecha == '') {
+		msj('error', 'Ingrese la fecha de cierre');
+		$('#fecha').css('border-color','red');
+		return;
 	}
 	$.ajax({
 		data  : { Nombre 	  : Nombre,
@@ -98,7 +101,8 @@ function registrar() {
 				  oportunidad : oportunidad,
 				  cliente 	  : cliente,
 				  productos   : productos,
-				  attach 	  : attach},
+				  attach 	  : attach,
+				  fecha 	  : fecha},
 		url   : 'inicio/registrar',
 		type  : 'POST'
 	}).done(function(data){
@@ -128,6 +132,7 @@ function limpiarCampos() {
 	$('.selectpicker').selectpicker('refresh');
 	var attach      = $('#attach').val('0');
 	$('.selectpicker').selectpicker('refresh');
+	var fecha		= $('#fecha').val(null);
 }
 
 function soloLetras(e) {
@@ -169,9 +174,12 @@ function validarCampos(){
 	$inputs.each(function() {
 		if(isEmpty($(this).val())){
 				$(this).css('border-color','red');
+				$('.btn-default').css('border-color','#C6C9CA');
+				$('#fecha').css('border-color','#C6C9CA');
 				formvalido = false;
 		}else{
-				$(this).css('border-color','');
+				$(this).css('border-color','#C6C9CA');
+				$('#fecha').css('border-color','#C6C9CA');
 		}
 	});
 	return formvalido;

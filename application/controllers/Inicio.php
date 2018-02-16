@@ -33,6 +33,7 @@ class Inicio extends CI_Controller {
             $cliente     = $this->input->post('cliente');
             $productos 	 = $this->input->post('productos');
             $attach 	 = $this->input->post('attach');
+            $fecha      = $this->input->post('fecha');
             $arrayInsertPers = array('Nombre' 		=> $Nombre,
                                  'Apellido' 	=> $Apellido,
                                  'Correo'       => $email,
@@ -44,7 +45,7 @@ class Inicio extends CI_Controller {
                                  'Nombre_cliente' => $cliente,
                                  'Productos'      => $productos,
                                  'attach'         => $attach,
-                             	 'fecha_cierre'   => '2018-02-15',
+                             	 'fecha_cierre'   => $fecha,
                              	 'Id_pers' 		  => $datoInsertPers['Id']);
             $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'oportunidad');
           $data['error'] = EXIT_SUCCESS;
