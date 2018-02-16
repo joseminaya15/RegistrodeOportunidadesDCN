@@ -44,7 +44,7 @@ class Inicio extends CI_Controller {
                                  'Nombre_cliente' => $cliente,
                                  'Productos'      => $productos,
                                  'attach'         => $attach,
-                             	 'fecha_cierre'   => '15-02-2018',
+                             	 'fecha_cierre'   => '2018-02-15',
                              	 'Id_pers' 		  => $datoInsertPers['Id']);
             $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'oportunidad');
             /*$session = array('nombre_completo' => $nombre_completo,
