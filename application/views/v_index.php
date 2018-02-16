@@ -38,35 +38,35 @@
 				<form class="formulario col-sm-6 col-xs-12">
 					<div class="form-group col-xs-12">
 					    <label for="apellido">Nombre</label>
-					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre" onchange="validarCampos()">
 				    </div>
 					<div class="form-group col-xs-12">
 					    <label for="apellido">Apellido</label>
-					    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+					    <input type="text" class="form-control" id="apellido" placeholder="Apellido" onchange="validarCampos()">
 				    </div>
 				    <div class="form-group col-xs-12">
 					    <label for="email">Email</label>
-					    <input type="email" class="form-control" id="email" placeholder="Email">
+					    <input type="email" class="form-control" id="email" placeholder="Email" onchange="validarCampos()">
 				    </div>
 				    <div class="form-group col-xs-12">
 					    <label for="correo">Confirmar email</label>
-					    <input type="email" class="form-control" id="correo" placeholder="Email">
+					    <input type="email" class="form-control" id="correo" placeholder="Email" onchange="validarCampos()">
 				    </div>
 				     <div class="form-group col-xs-12">
 					    <label for="rol">Rol</label>
-					    <input type="text" class="form-control" id="rol" placeholder="Rol">
+					    <input type="text" class="form-control" id="rol" placeholder="Rol" onchange="validarCampos()">
 				    </div>
 				    <div class="form-group col-xs-12">
 					    <label for="canal">Nombre del Canal</label>
-					    <input type="text" class="form-control" id="canal" placeholder="Canal">
+					    <input type="text" class="form-control" id="canal" placeholder="Canal" onchange="validarCampos()">
 				    </div>
 				    <div class="form-group col-xs-12">
 					    <label for="oportunidad">Oportunidad</label>
-					    <input type="text" class="form-control" id="oportunidad" placeholder="Oportunidad">
+					    <input type="text" class="form-control" id="oportunidad" placeholder="Oportunidad" onchange="validarCampos()">
 				    </div>
 				    <div class="form-group col-xs-12">
 					    <label for="cliente">Nombre del Cliente</label>
-					    <input type="text" class="form-control" id="cliente" placeholder="Cliente">
+					    <input type="text" class="form-control" id="cliente" placeholder="Cliente" onchange="validarCampos()">
 				    </div>
 				    <div class="mdl-select col-xs-12">
 				    	<select class="selectpicker" title="Productos asociados a la oportunidad" id="productos">

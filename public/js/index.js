@@ -1,6 +1,6 @@
 function registrar() {
 	var Nombre 		= $('#Nombre').val();
-	var Apellido 	= $('#Apellido').val();
+	var Apellido 	= $('#apellido').val();
 	var email 		= $('#email').val();
 	var re_email    = $('#correo').val();
 	var rol 		= $('#rol').val();
@@ -10,7 +10,7 @@ function registrar() {
 	var productos   = $('#productos').val();
 	var attach      = $('#attach').val();
 
-	if(Nombre == '' && Apellido == undefined && email == '' && re_email == '' && rol == '' && canal == '' && oportunidad == '' && cliente == '' && productos == '' && attach == '') {
+	if(Nombre == '' && Apellido == '' && email == '' && re_email == '' && rol == '' && canal == '' && oportunidad == '' && cliente == '' && productos == '' && attach == '') {
 		validarCampos();
 	}
 	if(Nombre == null || Nombre == '') {
@@ -18,47 +18,67 @@ function registrar() {
 		msj('error', 'Ingrese su nombre');
 		return;
 	}
+	console.log(Apellido);
 	if(Apellido == null || Apellido == '') {
+		msj('error', 'Ingrese su apellido');
 		$('#Apellido').css('border-color','red');
 		return;
 	}
 	if(email == null || email == '') {
+		msj('error', 'Ingrese su email');
 		$('#email').css('border-color','red');
 		return;
+	}
+	if (!validateEmail(email)) {
+		msj('error', 'El formato de email ingresado es incorrecto');
+		$('#email').css('border-color','red');
+		return;
+	}else {
+		$('#email').css('border-color','#C6C9CA');
+	}
+	if(re_email == null || re_email == '') {
+		msj('error', 'Repita su email');
+		$('#correo').css('border-color','red');
+		return;
+	}
+	if (!validateEmail(re_email)) {
+		msj('error', 'El formato de email ingresado es incorrecto');
+		$('#correo').css('border-color','red');
+		return;
+	}else {
+		$('#correo').css('border-color','#C6C9CA');
 	}
 	if(email != re_email) {
 		msj('error', 'uno de los emails ingresados no coincide con el otro');
 		return;
 	}
-	if (!validateEmail(email)) {
-		$('#email').css('border-color','red');
-		return;
-	}
-	if (!validateEmail(re_email)) {
-		$('#correo').css('border-color','red');
-		return;
-	}
 	if(rol == null || rol == '') {
+		msj('error', 'Ingrese su rol');
 		$('#rol').css('border-color','red');
 		return;
 	}
 	if(canal == null || canal == '') {
+		msj('error', 'Ingrese su canal');
 		$('#canal').css('border-color','red');
 		return;
 	}
 	if(oportunidad == null || oportunidad == '') {
+		msj('error', 'Ingrese su número de oportunidad de HPE');
 		$('#oportunidad').css('border-color','red');
 		return;
 	}
 	if(cliente == null || cliente == '') {
+		msj('error', 'Ingrese el nombre del cliente');
 		$('#cliente').css('border-color','red');
 		return;
 	}
 	if(productos == null || productos == '') {
+		msj('error', 'Ingrese los productos');
 		$('#productos').css('border-color','red');
 		return;
 	}
 	if(attach == null || attach == '') {
+		msj('error', 'Ingrese el Attach de DCN que se realizó');
 		$('#attach').css('border-color','red');
 		return;
 	}
