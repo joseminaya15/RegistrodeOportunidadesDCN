@@ -40,52 +40,53 @@
 					<img src="public/img/imagen.jpg">
 				</div>
 				<form class="formulario col-sm-6 col-xs-12">
-					<div class="form-group col-xs-12">
+					<div class="form-group col-xs-12 p-0">
 					    <!-- <label for="apellido">Nombre</label> -->
 					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre" onchange="validarCampos()">
 				    </div>
-					<div class="form-group col-xs-12">
+					<div class="form-group col-xs-12 p-0">
 					    <!-- <label for="apellido">Apellido</label> -->
 					    <input type="text" class="form-control" id="apellido" placeholder="Apellido" onchange="validarCampos()">
 				    </div>
-				    <div class="form-group col-xs-12">
+				    <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="email">Email</label> -->
 					    <input type="email" class="form-control" id="email" placeholder="Email" onchange="validarCampos()">
 				    </div>
-				    <div class="form-group col-xs-12">
+				    <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="correo">Confirmar email</label> -->
 					    <input type="email" class="form-control" id="correo" placeholder="Confirmar Email" onchange="validarCampos()">
 				    </div>
-				     <div class="form-group col-xs-12">
+				     <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="rol">Rol</label> -->
 					    <input type="text" class="form-control" id="rol" placeholder="Rol" onchange="validarCampos()">
 				    </div>
-				    <div class="form-group col-xs-12">
+				    <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="canal">Nombre del Canal</label> -->
 					    <input type="text" class="form-control" id="canal" placeholder="Canal" onchange="validarCampos()">
 				    </div>
-				    <div class="form-group col-xs-12">
+				    <div class="form-group placeholder-static col-xs-12 p-0">
 					    <!-- <label for="oportunidad">Oportunidad</label> -->
-					    <input type="text" class="form-control" id="oportunidad" placeholder="Oportunidad" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="oportunidad" onchange="validarCampos()">
+					    <span class="">OPE - </span>
 				    </div>
-				    <div class="form-group col-xs-12">
+				    <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="cliente">Nombre del Cliente</label> -->
 					    <input type="text" class="form-control" id="cliente" placeholder="Nombre del Cliente" onchange="validarCampos()">
 				    </div>
-				    <div class="mdl-select col-xs-12">
+				    <div class="mdl-select col-xs-12 p-0">
 				    	<select class="selectpicker" title="Productos asociados a la oportunidad" id="productos">
 							<option value="FlexFabric Promo TOR">FlexFabric Promo TOR</option>
 							<option value="FlexFabric TOR (no Promo)">FlexFabric TOR (no Promo)</option>
 						</select>
 				    </div>
-				    <div class="mdl-select col-xs-12">
+				    <div class="mdl-select col-xs-12 p-0">
 				    	<select class="selectpicker" title="El Attach de DCN se realizó sobre" id="attach">
 							<option value="Servidores">Servidores</option>
 							<option value="Almacenamiento">Almacenamiento</option>
 							<option value="Hyperconverged u otros">Hyperconverged u otros</option>
 						</select>
 				    </div>
-				    <div class="col-xs-12">
+				    <div class="col-xs-12 p-0">
                         <div class="form-group">
                         	<label for="cliente">Fecha de Cierre del Negocio</label>
                         	<div class="mdl-input">
@@ -98,7 +99,7 @@
                         	</div>
                         </div>
                     </div>
-				    <div class="mdl-register col-xs-12">
+				    <div class="mdl-register col-xs-12 p-0">
 			    		<button type="button" name="boton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()">Registrarse</button>
 				    </div>
 				</form>

@@ -26,7 +26,7 @@ h2.subtitle{
 	margin: 20px 0;
 }
 .mdl-select{
-	margin: 15px 0;
+	margin: 10px 0;
 }
 .mdl-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
 	width: 100%;
@@ -38,6 +38,10 @@ h2.subtitle{
     border-radius: 0;
     height: 50px;
     border: 1px solid #C6C9CA;
+}
+.form-control:focus{
+	border-color: #C6C9CA;
+	box-shadow: none;
 }
 .bootstrap-select>.dropdown-toggle.bs-placeholder, 
 .bootstrap-select>.dropdown-toggle.bs-placeholder:active, 
@@ -63,6 +67,15 @@ h2.subtitle{
 .mdl-input .form-control{
     float: left;
     max-width: calc(100% - 45px);
+}
+.placeholder-static .form-control{
+	padding-left: 50px;
+}
+.placeholder-static span{
+    position: absolute;
+    bottom: 14px;
+    left: 12px;
+    color: #999999;
 }
 @media ( max-width: 768px ){
 	h2.title{
