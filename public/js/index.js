@@ -10,7 +10,7 @@ function registrar() {
 	var productos   = $('#productos').val();
 	var attach      = $('#attach').val();
 	var fecha		= $('#fecha').val();
-
+	var newdate = fecha.split("/").reverse().join("-");
 	if(Nombre == '' && Apellido == '' && email == '' && re_email == '' && rol == '' && canal == '' && oportunidad == '' && cliente == '' && productos == '' && attach == '') {
 		validarCampos();
 	}
@@ -102,7 +102,7 @@ function registrar() {
 				  cliente 	  : cliente,
 				  productos   : productos,
 				  attach 	  : attach,
-				  fecha 	  : fecha},
+				  fecha 	  : newdate},
 		url   : 'inicio/registrar',
 		type  : 'POST'
 	}).done(function(data){
