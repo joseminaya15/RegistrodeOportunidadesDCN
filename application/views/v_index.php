@@ -39,7 +39,7 @@
 					<p>Download the paper to learn more.</p>
 					<img src="public/img/imagen.jpg">
 				</div>
-				<form class="formulario col-sm-6 col-xs-12">
+				<form class="formulario col-sm-6 col-xs-12 m-t-20">
 					<div class="form-group col-xs-12 p-0">
 					    <!-- <label for="apellido">Nombre</label> -->
 					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre" onchange="validarCampos()">
