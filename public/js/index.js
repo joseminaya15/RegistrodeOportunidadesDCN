@@ -18,7 +18,6 @@ function registrar() {
 		msj('error', 'Ingrese su nombre');
 		return;
 	}
-	console.log(Apellido);
 	if(Apellido == null || Apellido == '') {
 		msj('error', 'Ingrese su apellido');
 		$('#Apellido').css('border-color','red');
@@ -72,15 +71,22 @@ function registrar() {
 		$('#cliente').css('border-color','red');
 		return;
 	}
+	console.log(productos);
 	if(productos == null || productos == '') {
 		msj('error', 'Ingrese los productos');
 		$('#productos').css('border-color','red');
 		return;
+	}else {
+		console.log('entra');
+		$('#productos').parents().find('.btn-default').css('border-color','#C6C9CA');
 	}
+	console.log(attach);
 	if(attach == null || attach == '') {
 		msj('error', 'Ingrese el Attach de DCN que se realizó');
 		$('#attach').css('border-color','red');
 		return;
+	}else {
+		$('#attach').css('border-color','#C6C9CA');
 	}
 	$.ajax({
 		data  : { Nombre 	  : Nombre,
@@ -111,15 +117,17 @@ function registrar() {
 
 function limpiarCampos() {
 	var Nombre 		= $('#Nombre').val(null);
-	var Apellido 	= $('#Apellido').val(null);
+	var Apellido 	= $('#apellido').val(null);
 	var email 		= $('#email').val(null);
 	var re_email    = $('#correo').val(null);
 	var rol 		= $('#rol').val(null);
 	var canal 		= $('#canal').val(null);
 	var oportunidad = $('#oportunidad').val(null);
 	var cliente     = $('#cliente').val(null);
-	var productos   = $('#productos').val(null);
-	var attach      = $('#attach').val(null);
+	var productos   = $('#productos').val('0');
+	$('.selectpicker').selectpicker('refresh');
+	var attach      = $('#attach').val('0');
+	$('.selectpicker').selectpicker('refresh');
 }
 
 function soloLetras(e) {
