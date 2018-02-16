@@ -16,6 +16,7 @@
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/bootstrap.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>datetimepicker/css/bootstrap-material-datetimepicker.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>roboto.css?v=<?php echo time();?>">
@@ -37,36 +38,36 @@
 				</div>
 				<form class="formulario col-sm-6 col-xs-12">
 					<div class="form-group col-xs-12">
-					    <label for="apellido">Nombre</label>
+					    <!-- <label for="apellido">Nombre</label> -->
 					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
 				    </div>
 					<div class="form-group col-xs-12">
-					    <label for="apellido">Apellido</label>
+					    <!-- <label for="apellido">Apellido</label> -->
 					    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
 				    </div>
 				    <div class="form-group col-xs-12">
-					    <label for="email">Email</label>
+					    <!-- <label for="email">Email</label> -->
 					    <input type="email" class="form-control" id="email" placeholder="Email">
 				    </div>
 				    <div class="form-group col-xs-12">
-					    <label for="correo">Confirmar email</label>
-					    <input type="email" class="form-control" id="correo" placeholder="Email">
+					    <!-- <label for="correo">Confirmar email</label> -->
+					    <input type="email" class="form-control" id="correo" placeholder="Confirmar Email">
 				    </div>
 				     <div class="form-group col-xs-12">
-					    <label for="rol">Rol</label>
+					    <!-- <label for="rol">Rol</label> -->
 					    <input type="text" class="form-control" id="rol" placeholder="Rol">
 				    </div>
 				    <div class="form-group col-xs-12">
-					    <label for="canal">Nombre del Canal</label>
+					    <!-- <label for="canal">Nombre del Canal</label> -->
 					    <input type="text" class="form-control" id="canal" placeholder="Canal">
 				    </div>
 				    <div class="form-group col-xs-12">
-					    <label for="oportunidad">Oportunidad</label>
+					    <!-- <label for="oportunidad">Oportunidad</label> -->
 					    <input type="text" class="form-control" id="oportunidad" placeholder="Oportunidad">
 				    </div>
 				    <div class="form-group col-xs-12">
-					    <label for="cliente">Nombre del Cliente</label>
-					    <input type="text" class="form-control" id="cliente" placeholder="Cliente">
+					    <!-- <label for="cliente">Nombre del Cliente</label> -->
+					    <input type="text" class="form-control" id="cliente" placeholder="Nombre del Cliente">
 				    </div>
 				    <div class="mdl-select col-xs-12">
 				    	<select class="selectpicker" title="Productos asociados a la oportunidad" id="productos">
@@ -82,8 +83,20 @@
 						</select>
 				    </div>
 				    <div class="col-xs-12">
-			    		<input type="button" name="boton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()" value="Registrarse">
-
+                        <div class="form-group">
+                        	<label for="cliente">Fecha de Cierre del Negocio</label>
+                        	<div class="mdl-input">
+                        		<div class="mdl-icon">
+		                            <button type="button" class="mdl-button mdl-js-button mdl-button--icon">
+		                                <i class="mdi mdi-date_range"></i>
+		                            </button>
+		                        </div>
+                            	<input class="form-control" type="text" id="fecha" name="fecha" maxlength="10" placeholder="dd/mm/aaaa" value="">
+                        	</div>
+                        </div>
+                    </div>
+				    <div class="mdl-register col-xs-12">
+			    		<button type="button" name="boton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()">Registrarse</button>
 				    </div>
 				</form>
 			</div>
@@ -95,8 +108,12 @@
 	<script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/bootstrap-select.min.js?v=<?php echo time();?>"></script>
 	<script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/i18n/defaults-es_ES.min.js?v=<?php echo time();?>"></script>
 	<script src="<?php echo RUTA_PLUGINS?>mdl/material.min.js?v=<?php echo time();?>"></script>
+    <script src="<?php echo RUTA_PLUGINS?>moment/moment.min.js?v=<?php echo time();?>"></script>
+    <script src="<?php echo RUTA_PLUGINS?>datetimepicker/js/bootstrap-material-datetimepicker.js?v=<?php echo time();?>"></script>
+    <script src="<?php echo RUTA_PLUGINS?>jquery-mask/jquery.mask.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
+    <script src="<?php echo RUTA_JS?>jsmenu.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>index.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
     	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
@@ -104,6 +121,8 @@
         } else {
             $('select').selectpicker();
         }
+        initButtonCalendarDaysMinToday('fecha');
+        initMaskInputs('fecha');
     </script>
 </body>
 </html>
