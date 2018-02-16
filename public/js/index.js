@@ -10,8 +10,7 @@ function registrar() {
 	var productos   = $('#productos').val();
 	var attach      = $('#attach').val();
 
-	console.log(attach == '' ? 'si' : 'no');
-	if(Nombre == '' && Apellido == '' && email == '' && re_email == '' && rol == '' && canal == '' && oportunidad == '' && cliente == '' && productos == '' && attach == '') {
+	if(Nombre == '' && Apellido == undefined && email == '' && re_email == '' && rol == '' && canal == '' && oportunidad == '' && cliente == '' && productos == '' && attach == '') {
 		validarCampos();
 	}
 	if(Nombre == null || Nombre == '') {

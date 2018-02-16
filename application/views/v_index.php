@@ -82,7 +82,8 @@
 						</select>
 				    </div>
 				    <div class="col-xs-12">
-			    		<input type="button" name="boton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()">Registrarse
+			    		<input type="button" name="boton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()" value="Registrarse">
+
 				    </div>
 				</form>
 			</div>
