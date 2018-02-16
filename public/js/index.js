@@ -1,6 +1,6 @@
 function registrar() {
 	var Nombre 		= $('#Nombre').val();
-	var Apellido 	= $('#Apellido').val();
+	var Apellido 	= $('#apellido').val();
 	var email 		= $('#email').val();
 	var re_email    = $('#correo').val();
 	var rol 		= $('#rol').val();
@@ -10,7 +10,7 @@ function registrar() {
 	var productos   = $('#productos').val();
 	var attach      = $('#attach').val();
 
-	if(Nombre == '' && Apellido == undefined && email == '' && re_email == '' && rol == '' && canal == '' && oportunidad == '' && cliente == '' && productos == '' && attach == '') {
+	if(Nombre == '' && Apellido == '' && email == '' && re_email == '' && rol == '' && canal == '' && oportunidad == '' && cliente == '' && productos == '' && attach == '') {
 		validarCampos();
 	}
 	if(Nombre == null || Nombre == '') {
@@ -19,48 +19,74 @@ function registrar() {
 		return;
 	}
 	if(Apellido == null || Apellido == '') {
+		msj('error', 'Ingrese su apellido');
 		$('#Apellido').css('border-color','red');
 		return;
 	}
 	if(email == null || email == '') {
+		msj('error', 'Ingrese su email');
 		$('#email').css('border-color','red');
 		return;
+	}
+	if (!validateEmail(email)) {
+		msj('error', 'El formato de email ingresado es incorrecto');
+		$('#email').css('border-color','red');
+		return;
+	}else {
+		$('#email').css('border-color','#C6C9CA');
+	}
+	if(re_email == null || re_email == '') {
+		msj('error', 'Repita su email');
+		$('#correo').css('border-color','red');
+		return;
+	}
+	if (!validateEmail(re_email)) {
+		msj('error', 'El formato de email ingresado es incorrecto');
+		$('#correo').css('border-color','red');
+		return;
+	}else {
+		$('#correo').css('border-color','#C6C9CA');
 	}
 	if(email != re_email) {
 		msj('error', 'uno de los emails ingresados no coincide con el otro');
 		return;
 	}
-	if (!validateEmail(email)) {
-		$('#email').css('border-color','red');
-		return;
-	}
-	if (!validateEmail(re_email)) {
-		$('#correo').css('border-color','red');
-		return;
-	}
 	if(rol == null || rol == '') {
+		msj('error', 'Ingrese su rol');
 		$('#rol').css('border-color','red');
 		return;
 	}
 	if(canal == null || canal == '') {
+		msj('error', 'Ingrese su canal');
 		$('#canal').css('border-color','red');
 		return;
 	}
 	if(oportunidad == null || oportunidad == '') {
+		msj('error', 'Ingrese su número de oportunidad de HPE');
 		$('#oportunidad').css('border-color','red');
 		return;
 	}
 	if(cliente == null || cliente == '') {
+		msj('error', 'Ingrese el nombre del cliente');
 		$('#cliente').css('border-color','red');
 		return;
 	}
+	console.log(productos);
 	if(productos == null || productos == '') {
+		msj('error', 'Ingrese los productos');
 		$('#productos').css('border-color','red');
 		return;
+	}else {
+		console.log('entra');
+		$('#productos').parents().find('.btn-default').css('border-color','#C6C9CA');
 	}
+	console.log(attach);
 	if(attach == null || attach == '') {
+		msj('error', 'Ingrese el Attach de DCN que se realizó');
 		$('#attach').css('border-color','red');
 		return;
+	}else {
+		$('#attach').css('border-color','#C6C9CA');
 	}
 	$.ajax({
 		data  : { Nombre 	  : Nombre,
@@ -91,15 +117,17 @@ function registrar() {
 
 function limpiarCampos() {
 	var Nombre 		= $('#Nombre').val(null);
-	var Apellido 	= $('#Apellido').val(null);
+	var Apellido 	= $('#apellido').val(null);
 	var email 		= $('#email').val(null);
 	var re_email    = $('#correo').val(null);
 	var rol 		= $('#rol').val(null);
 	var canal 		= $('#canal').val(null);
 	var oportunidad = $('#oportunidad').val(null);
 	var cliente     = $('#cliente').val(null);
-	var productos   = $('#productos').val(null);
-	var attach      = $('#attach').val(null);
+	var productos   = $('#productos').val('0');
+	$('.selectpicker').selectpicker('refresh');
+	var attach      = $('#attach').val('0');
+	$('.selectpicker').selectpicker('refresh');
 }
 
 function soloLetras(e) {
