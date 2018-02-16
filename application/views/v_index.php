@@ -27,6 +27,9 @@
 	<section id="principal">
 		<div class="container">
 			<div class="row">
+				<div class="mdl-imagen col-xs-12">
+					<img src="<?php echo RUTA_IMG?>logo.svg">
+				</div>
 				<div class="col-xs-12">
 					<h2 class="title">Moor insights: Hybrid IT helps businesses navigate through digital transformation</h2>
 				</div>

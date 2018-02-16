@@ -7,10 +7,20 @@ body{
 h2{
 	font-family: 'RobotoBold'
 }
+h2.title{
+    font-size: 36px;
+    line-height: 36px;
+}
 h2.subtitle{
 	font-size: 20px;
     margin: 5px 0;
     line-height: 24px;
+}
+.mdl-imagen{
+	margin: 20px 0;
+}
+.mdl-imagen img{
+	max-width: 150px;
 }
 .mdl-register{
 	margin: 20px 0;
