@@ -47,17 +47,6 @@ class Inicio extends CI_Controller {
                              	 'fecha_cierre'   => '2018-02-15',
                              	 'Id_pers' 		  => $datoInsertPers['Id']);
             $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'oportunidad');
-            /*$session = array('nombre_completo' => $nombre_completo,
-                             'Empresa'         => $empresa,
-                             'Email'           => $email,
-                             'Pais'            => $pais,
-                             'Cargo'           => $cargo,
-                             'Telefono'        => $telefono,
-                             'Relacion'        => $relacion,
-                             'Contacto'        => $contacto,
-                             'pantalla'        => 0,
-                             'id_persona'      => $datoInsert['Id']);
-            $this->session->set_userdata($session);*/
           $data['error'] = EXIT_SUCCESS;
         } catch (Exception $e) {
             $data['msj'] = $e->getMessage();
