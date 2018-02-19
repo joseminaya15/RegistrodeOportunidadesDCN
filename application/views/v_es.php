@@ -51,13 +51,32 @@
 						<p>Registra en este portal tus oportunidades ya declaradas en salesforce.com y te apoyaremos con el seguimiento y soporte para cerrar tus negocios lo antes posible y ganes tus puntos via <strong>Engage & Grow</strong></p>
 						<small><strong>Nota: </strong>Para poder participar deber&aacute;s estar registrado en en el programa Engage & Grow</small>
 					</div>
-					<div class="contenido">
+					<div>
 						<h2 class="subtitle">HPE Data Center Networking</h2>
 						<p>Las organizaciones quieren arquitecturas de red que sean abiertas y programables y que estén integradas en sus pilas tecnológicas de computación, almacenamiento y nube. El portafolio de redes de centro de datos HPE ofrece estas capacidades para múltiples segmentos y casos de uso.</p>
 					</div>
-					<div class="">
+					<div class="contenido m-t-15">
 						<h2 class="subtitle">Hybrid IT</h2>
 						<p>Data Center Networking</p>
+						<div class="contenido-partner right inline">
+							<img src="<?php echo RUTA_IMG?>logo_hpe.png">
+							<small><strong>Conecta Servidores, Almacenamiento</strong></small>
+							<ul>
+								<li>Servers</li>
+								<li>Storage</li>
+								<li>Hyper-Converged Systems</li>
+							</ul>
+						</div>
+						<div class="contenido-partner inline">
+							<img src="<?php echo RUTA_IMG?>logo_aruba.png">
+							<small><strong>Conecta Usuarios, dispositivos</strong></small>
+							<ul>
+								<li>Campus & Branch</li>
+								<li>IoT (Internet of Things)</li>
+								<li>Borde (Intelligent Edge)</li>
+								<li>Movilidad (Wireless)</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<form class="formulario col-sm-6 col-xs-12 m-t-20">
