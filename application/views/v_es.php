@@ -82,15 +82,15 @@
 					<h2 class="title-formulario">Datos personales</h2>
 					<div class="form-group col-xs-12 p-0">
 					    <!-- <label for="apellido">Nombre</label> -->
-					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre como figura en E&G" onchange="validarCampos()">
 				    </div>
 					<div class="form-group col-xs-12 p-0">
 					    <!-- <label for="apellido">Apellido</label> -->
-					    <input type="text" class="form-control" id="apellido" placeholder="Apellido" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="apellido" placeholder="Apellido como figura en E&G" onchange="validarCampos()">
 				    </div>
 				    <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="email">Email</label> -->
-					    <input type="email" class="form-control" id="email" placeholder="Email" onchange="validarCampos()">
+					    <input type="email" class="form-control" id="email" placeholder="Email como esta registrado en E&G" onchange="validarCampos()">
 				    </div>
 				    <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="correo">Confirmar email</label> -->
