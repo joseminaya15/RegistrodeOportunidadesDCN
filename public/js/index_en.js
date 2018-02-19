@@ -16,87 +16,87 @@ function registrar() {
 	}
 	if(Nombre == null || Nombre == '') {
 		$('#Nombre').css('border-color','red');
-		msj('error', 'Ingrese su nombre');
+		msj('error', 'Enter your name');
 		return;
 	}
 	if(Apellido == null || Apellido == '') {
-		msj('error', 'Ingrese su apellido');
+		msj('error', 'Enter your last name');
 		$('#Apellido').css('border-color','red');
 		return;
 	}
 	if(email == null || email == '') {
-		msj('error', 'Ingrese su email');
+		msj('error', 'Enter your email');
 		$('#email').css('border-color','red');
 		return;
 	}
 	if (!validateEmail(email)) {
-		msj('error', 'El formato de email ingresado es incorrecto');
+		msj('error', 'The email format entered is incorrect');
 		$('#email').css('border-color','red');
 		return;
 	}else {
 		$('#email').css('border-color','#C6C9CA');
 	}
 	if(re_email == null || re_email == '') {
-		msj('error', 'Repita su email');
+		msj('error', 'Repeat your email');
 		$('#correo').css('border-color','red');
 		return;
 	}
 	if (!validateEmail(re_email)) {
-		msj('error', 'El formato de email ingresado es incorrecto');
+		msj('error', 'The email format entered is incorrect');
 		$('#correo').css('border-color','red');
 		return;
 	}else {
 		$('#correo').css('border-color','#C6C9CA');
 	}
 	if(email != re_email) {
-		msj('error', 'uno de los emails ingresados no coincide con el otro');
+		msj('error', 'one of the emails entered does not match the other');
 		return;
 	}
 	if(rol == null || rol == '') {
-		msj('error', 'Ingrese su rol');
+		msj('error', 'Enter your role');
 		$('#rol').css('border-color','red');
 		return;
 	}
 	if(canal == null || canal == '') {
-		msj('error', 'Ingrese su canal');
+		msj('error', 'Enter your channel');
 		$('#canal').css('border-color','red');
 		return;
 	}
 	if(oportunidad == null || oportunidad == '') {
-		msj('error', 'Ingrese su número de oportunidad de HPE');
+		msj('error', 'Enter your HPE opportunity number');
 		$('#oportunidad').css('border-color','red');
 		return;
 	}
 	if(cliente == null || cliente == '') {
-		msj('error', 'Ingrese el nombre del cliente');
+		msj('error', "Enter the customer's name");
 		$('#cliente').css('border-color','red');
 		return;
 	}
 	if(productos == null || productos == '') {
-		msj('error', 'Ingrese los productos');
+		msj('error', 'Enter your products');
 		$('#productos').css('border-color','red');
 		return;
 	}else {
 		$('#productos').parents().find('.btn-default').css('border-color','#C6C9CA');
 	}
 	if(attach == null || attach == '') {
-		msj('error', 'Ingrese el Attach de DCN que se realizó');
+		msj('error', 'Enter the DCN Attach that was made');
 		$('#attach').css('border-color','red');
 		return;
 	}else {
 		$('#attach').css('border-color','#C6C9CA');
 	}
 	if(fecha == null || fecha == '') {
-		msj('error', 'Ingrese la fecha de cierre');
+		msj('error', 'Enter the closing date');
 		$('#fecha').css('border-color','red');
 		return;
 	}else {
 		if(fecha < '2017-11-01') {
-			msj('error', 'Seleccione una fecha mayor a 01/11/2017');
+			msj('error', 'Select a date greater than 01/11/2017');
 			return;
 		}
 		if(fecha > '2018-31-10') {
-			msj('error', 'Seleccione una fecha menor a 31/10/2018');
+			msj('error', 'Select a date less than 31/10/2018');
 			return;
 		}
 	}
