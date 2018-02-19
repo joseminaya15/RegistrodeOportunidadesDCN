@@ -46,20 +46,41 @@
     				</div>
 				</div>
 				<div class="col-sm-6">
-					<div class="contenido">
+					<div class="contenido-principal">
 						<h2 class="subtitle">¡No dejes dinero sobre la mesa!</h2>
 						<p>Registra en este portal tus oportunidades ya declaradas en salesforce.com y te apoyaremos con el seguimiento y soporte para cerrar tus negocios lo antes posible y ganes tus puntos via <strong>Engage & Grow</strong></p>
+						<small><strong>Nota: </strong>Para poder participar deber&aacute;s estar registrado en en el programa Engage & Grow</small>
 					</div>
-					<div class="contenido">
+					<div>
 						<h2 class="subtitle">HPE Data Center Networking</h2>
 						<p>Las organizaciones quieren arquitecturas de red que sean abiertas y programables y que estén integradas en sus pilas tecnológicas de computación, almacenamiento y nube. El portafolio de redes de centro de datos HPE ofrece estas capacidades para múltiples segmentos y casos de uso.</p>
 					</div>
-					<div class="">
+					<div class="contenido m-t-15">
 						<h2 class="subtitle">Hybrid IT</h2>
 						<p>Data Center Networking</p>
+						<div class="contenido-partner right inline">
+							<img src="<?php echo RUTA_IMG?>logo_hpe.png">
+							<small><strong>Conecta Servidores, Almacenamiento</strong></small>
+							<ul>
+								<li>Servers</li>
+								<li>Storage</li>
+								<li>Hyper-Converged Systems</li>
+							</ul>
+						</div>
+						<div class="contenido-partner inline">
+							<img src="<?php echo RUTA_IMG?>logo_aruba.png">
+							<small><strong>Conecta Usuarios, dispositivos</strong></small>
+							<ul>
+								<li>Campus & Branch</li>
+								<li>IoT (Internet of Things)</li>
+								<li>Borde (Intelligent Edge)</li>
+								<li>Movilidad (Wireless)</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<form class="formulario col-sm-6 col-xs-12 m-t-20">
+					<h2 class="title-formulario">Datos personales</h2>
 					<div class="form-group col-xs-12 p-0">
 					    <!-- <label for="apellido">Nombre</label> -->
 					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre" onchange="validarCampos()">
@@ -84,9 +105,10 @@
 					    <!-- <label for="canal">Nombre del Canal</label> -->
 					    <input type="text" class="form-control" id="canal" placeholder="Canal" onchange="validarCampos()">
 				    </div>
+				    <h2 class="title-formulario">Datos de Oportunidad</h2>
 				    <div class="form-group placeholder-static col-xs-12 p-0">
 					    <!-- <label for="oportunidad">Oportunidad</label> -->
-					    <input type="text" class="form-control" id="oportunidad" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="oportunidad" placeholder="0000000000" onchange="validarCampos()">
 					    <span class="">OPE - </span>
 				    </div>
 				    <div class="form-group col-xs-12 p-0">
@@ -120,7 +142,7 @@
                         </div>
                     </div>
 				    <div class="mdl-register col-xs-12 p-0">
-			    		<button type="button" name="boton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()">Registrarse</button>
+			    		<button type="button" name="boton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()">Registrar Oportunidad</button>
 				    </div>
 				</form>
 			</div>
