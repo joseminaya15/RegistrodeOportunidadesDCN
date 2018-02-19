@@ -39,12 +39,14 @@ h2.subtitle{
     color: #FFFFFF;
 }
 .mdl-idioma .bootstrap-select{
-	width: 130px !important;
+	width: 115px !important;
 	margin-top: 20px;
 }
 .mdl-idioma .bootstrap-select .btn.dropdown-toggle{
 	background-color: transparent !important;
 	border-radius: 0;
+	border-color: #000000;
+    padding: 2px 12px;
 }
 .mdl-register{
 	margin: 20px 0;
