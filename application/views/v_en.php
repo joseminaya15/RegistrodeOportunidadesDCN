@@ -8,7 +8,7 @@
     <meta name="keywords"               content="Registro de Oportunidades DCN">
     <meta name="robots"                 content="Index,Follow">
     <meta name="date"                   content="Febrero 15, 2018"/>
-    <meta name="language"               content="es">
+    <meta name="language"               content="en">
     <meta name="theme-color"            content="#000000">
 	<title>Registro de Oportunidades DCN</title>
 	<link rel="shortcut icon" href="<?php echo RUTA_IMG?>favicon.png">
