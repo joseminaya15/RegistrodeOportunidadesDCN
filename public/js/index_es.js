@@ -118,7 +118,6 @@ function registrar() {
       }
 	});
 }
-
 function limpiarCampos() {
 	var Nombre 		= $('#Nombre').val(null);
 	var Apellido 	= $('#apellido').val(null);
@@ -134,7 +133,6 @@ function limpiarCampos() {
 	$('.selectpicker').selectpicker('refresh');
 	var fecha		= $('#fecha').val(null);
 }
-
 function soloLetras(e) {
     key 	   = e.keyCode || e.which;
     tecla 	   = String.fromCharCode(key).toLowerCase();
@@ -167,7 +165,6 @@ function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
-
 function validarCampos(){
 	var $inputs = $('form :input');
 	var formvalido = true;
@@ -188,4 +185,29 @@ function isEmpty(val){
 	if(jQuery.trim(val).length != 0)
     	return false;
 		return true;
+}
+function cambiarIdioma() {
+	var idioma = $('#idioma').val();
+	if(idioma == 'Español') {
+		location.href = 'Es';
+	}else if(idioma == 'Inglés') {
+		location.href = 'En';
+	}else if(idioma == 'Portugués') {
+		location.href = 'Pt';
+	}
+	$.ajax({
+		data  : {idioma   : idioma},
+		url   : 'es/cambiarIdioma',
+		type  : 'POST'
+	}).done(function(data){
+		try{
+        data = JSON.parse(data);
+        if(data.error == 0){
+        }else {
+        	return;
+        }
+      } catch (err){
+        msj('error',err.message);
+      }
+	});
 }

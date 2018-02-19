@@ -1,8 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
-class Inicio extends CI_Controller {
-
+class Pt extends CI_Controller {
 	function __construct() {
         parent::__construct();
         $this->load->helper("url");//BORRAR CACHÉ DE LA PÁGINA
@@ -12,13 +10,11 @@ class Inicio extends CI_Controller {
         $this->output->set_header('Cache-Control: post-check=0, pre-check=0',false);
         $this->output->set_header('Pragma: no-cache');
     }
-
 	public function index()
 	{
 		$data['nombre'] = '';
-		$this->load->view('v_index', $data);
+		$this->load->view('v_pt', $data);
 	}
-
 	function registrar() {
 		$data['error']  = EXIT_ERROR;
         $data['msj']    = null;
@@ -54,4 +50,17 @@ class Inicio extends CI_Controller {
         }
         echo json_encode($data);
 	}
+    function cambiarIdioma() {
+    $data['error'] = EXIT_ERROR;
+        $data['msj']   = null;
+        try {
+            $idioma = $this->input->post('idioma');
+            $session = array('idioma' => $idioma);
+            $this->session->set_userdata($session);
+            $data['error'] = EXIT_SUCCESS;
+        }catch(Exception $e) {
+            $data['msj'] = $e->getMessage();
+        }
+        echo json_encode($data);
+    }
 }

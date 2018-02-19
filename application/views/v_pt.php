@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt">
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible"  content="IE=edge">
@@ -27,17 +27,37 @@
 	<section id="principal">
 		<div class="container">
 			<div class="row">
-				<div class="mdl-imagen col-xs-12">
-					<img src="<?php echo RUTA_IMG?>logo.svg">
+				<div class="header">
+					<div class="header-imagen inline">
+						<img src="<?php echo RUTA_IMG?>logo.png">
+					</div>
+					<div class="header-contenido inline">
+						<p>Registro de Oportunidades</p>
+						<p>LAT Region</p>
+					</div>
 				</div>
-				<div class="col-xs-12">
-					<h2 class="title">Moor insights: Hybrid IT helps businesses navigate through digital transformation</h2>
+				<div class="col-xs-12 text-right">
+					<div class="mdl-idioma">
+						<select class="selectpicker" id="idioma"  name="idioma" onchange="cambiarIdioma()">
+							<option value="Portugués">Portugu&ecirc;s</option>
+							<option value="Español">Espanhol</option>
+							<option value="Inglés">Ingl&ecirc;s</option>
+						</select>
+    				</div>
 				</div>
-				<div class="contenido col-sm-6 col-xs-12">
-					<h2 class="subtitle">Overview</h2>
-					<p>As businesses drive for agility in the era of digital disruption, many are finding public cloud security, compliance, and performance may not meet their needs. Instead, they need a flexible, software-defined, scalable and composable hybrid IT environment to operate across datacenter, private and public clouds and the edge of the network.</p>
-					<p>Download the paper to learn more.</p>
-					<img src="public/img/imagen.jpg">
+				<div class="col-sm-6">
+					<div class="contenido">
+						<h2 class="subtitle">¡No dejes dinero sobre la mesa!</h2>
+						<p>Registra en este portal tus oportunidades ya declaradas en salesforce.com y te apoyaremos con el seguimiento y soporte para cerrar tus negocios lo antes posible y ganes tus puntos via <strong>Engage & Grow</strong></p>
+					</div>
+					<div class="contenido">
+						<h2 class="subtitle">HPE Data Center Networking</h2>
+						<p>Las organizaciones quieren arquitecturas de red que sean abiertas y programables y que estén integradas en sus pilas tecnológicas de computación, almacenamiento y nube. El portafolio de redes de centro de datos HPE ofrece estas capacidades para múltiples segmentos y casos de uso.</p>
+					</div>
+					<div class="">
+						<h2 class="subtitle">Hybrid IT</h2>
+						<p>Data Center Networking</p>
+					</div>
 				</div>
 				<form class="formulario col-sm-6 col-xs-12 m-t-20">
 					<div class="form-group col-xs-12 p-0">
@@ -118,7 +138,7 @@
     <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jsmenu.js?v=<?php echo time();?>"></script>
-    <script src="<?php echo RUTA_JS?>index.js?v=<?php echo time();?>"></script>
+    <script src="<?php echo RUTA_JS?>index_pt.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
     	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
         	$('select').selectpicker('mobile');
