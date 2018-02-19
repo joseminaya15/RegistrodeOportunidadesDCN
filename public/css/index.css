@@ -7,6 +7,9 @@ body{
 h2{
 	font-family: 'RobotoBold'
 }
+p{
+	margin: 0;
+}
 h2.title{
     font-size: 36px;
     line-height: 36px;
@@ -16,11 +19,32 @@ h2.subtitle{
     margin: 5px 0;
     line-height: 24px;
 }
-.mdl-imagen{
-	margin: 20px 0;
+.inline{
+	display: inline-block;
+	vertical-align: middle;
 }
-.mdl-imagen img{
-	max-width: 150px;
+.header{
+	width: 100%;
+	background-color: #2B4356;
+	padding: 15px 25px;
+}
+.header-imagen img{
+	width: 100%;
+	max-width: 120px;
+}
+.header-contenido{
+    max-width: calc(100% - 125px);
+    width: 100%;
+    text-align: right;
+    color: #FFFFFF;
+}
+.mdl-idioma .bootstrap-select{
+	width: 130px !important;
+	margin-top: 20px;
+}
+.mdl-idioma .bootstrap-select .btn.dropdown-toggle{
+	background-color: transparent !important;
+	border-radius: 0;
 }
 .mdl-register{
 	margin: 20px 0;
