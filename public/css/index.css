@@ -171,7 +171,7 @@ ul li{
 /* DateTimePicker */
 .dtp-date-view{
 	padding: 10px 0;
-	background-color: #004062
+	background-color: #0EB48D;
 }
 .dtp > .dtp-content > .dtp-date-view > header.dtp-header {
 	padding: 10px 20px;
@@ -248,7 +248,7 @@ header.dtp-header .dtp-actual-year {
 .dtp .dtp-actual-meridien a.selected,
 .dtp table.dtp-picker-days tr > td > a.selected,
 .dtp div.dtp-date, .dtp div.dtp-time {
-	background-color: #004062;
+	background-color: #0EB48D;
 }
 .dtp div.dtp-date i, .dtp div.dtp-time i {
 	color: #FFFFFF
@@ -288,10 +288,10 @@ header.dtp-header .dtp-actual-year {
     padding-top: 10px;
 }
 .dtp-content line[stroke="#2196F3"] {
-	stroke: #004062;
+	stroke: #0EB48D;
 }
 .dtp-content circle[fill="#2196F3"] {
-	fill: #004062;
+	fill: #0EB48D;
 }
 @media ( min-width : 800px ) {
 	.dtp>.dtp-content {
