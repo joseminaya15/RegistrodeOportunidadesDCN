@@ -93,6 +93,13 @@ ul li{
 .mdl-register{
 	margin: 20px 0;
 }
+.mdl-register button:hover,
+.mdl-register button{
+	background-color: #0EB48D;
+	color: #FFFFFF;
+	text-transform: initial;
+	font-family: 'RobotoBold';
+}
 .mdl-select{
 	margin: 10px 0;
 }
@@ -101,6 +108,11 @@ ul li{
 }
 .contenido img{
 	width: 100%;
+}
+.title-formulario{
+    font-size: 16px;
+    line-height: 18px;
+    margin: 12px 0;
 }
 .form-control{
     border-radius: 0;

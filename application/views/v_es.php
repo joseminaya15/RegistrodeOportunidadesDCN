@@ -80,6 +80,7 @@
 					</div>
 				</div>
 				<form class="formulario col-sm-6 col-xs-12 m-t-20">
+					<h2 class="title-formulario">Datos personales</h2>
 					<div class="form-group col-xs-12 p-0">
 					    <!-- <label for="apellido">Nombre</label> -->
 					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre" onchange="validarCampos()">
@@ -104,9 +105,10 @@
 					    <!-- <label for="canal">Nombre del Canal</label> -->
 					    <input type="text" class="form-control" id="canal" placeholder="Canal" onchange="validarCampos()">
 				    </div>
+				    <h2 class="title-formulario">Datos de Oportunidad</h2>
 				    <div class="form-group placeholder-static col-xs-12 p-0">
 					    <!-- <label for="oportunidad">Oportunidad</label> -->
-					    <input type="text" class="form-control" id="oportunidad" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="oportunidad" placeholder="0000000000" onchange="validarCampos()">
 					    <span class="">OPE - </span>
 				    </div>
 				    <div class="form-group col-xs-12 p-0">
@@ -140,7 +142,7 @@
                         </div>
                     </div>
 				    <div class="mdl-register col-xs-12 p-0">
-			    		<button type="button" name="boton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()">Registrarse</button>
+			    		<button type="button" name="boton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()">Registrar Oportunidad</button>
 				    </div>
 				</form>
 			</div>
