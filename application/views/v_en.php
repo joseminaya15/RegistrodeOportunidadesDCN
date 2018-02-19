@@ -32,7 +32,7 @@
 						<img src="<?php echo RUTA_IMG?>logo.png">
 					</div>
 					<div class="header-contenido inline">
-						<p>Registro de Oportunidades</p>
+						<p>Registro de Oportunidades DCN - LAT</p>
 					</div>
 				</div>
 				<div class="col-xs-12 text-right">
@@ -166,7 +166,7 @@
         } else {
             $('select').selectpicker();
         }
-        initButtonCalendarDaysMinToday('fecha');
+        initButtonCalendarDaysRange('fecha','01/11/2017','31/10/2018');
         initMaskInputs('fecha');
     </script>
 </body>

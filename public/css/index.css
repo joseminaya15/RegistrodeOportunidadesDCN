@@ -40,7 +40,7 @@ h2.subtitle{
     color: #FFFFFF;
 }
 .header-contenido p{
-	font-size: 18px;
+	font-size: 20px;
     line-height: 18px;
 }
 .mdl-idioma .bootstrap-select{
@@ -170,6 +170,13 @@ ul li{
 	h2.title{
 	    font-size: 25px;
 		line-height: 28px;
+	}
+}
+@media ( max-width: 480px ){
+	.header-contenido p{
+	    font-size: 14px;
+	    max-width: 120px;
+	    float: right;
 	}
 }
 /* DateTimePicker */
