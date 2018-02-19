@@ -39,9 +39,13 @@ h2.subtitle{
     text-align: right;
     color: #FFFFFF;
 }
+.header-contenido p{
+	font-size: 18px;
+    line-height: 18px;
+}
 .mdl-idioma .bootstrap-select{
 	width: 115px !important;
-	margin-top: 20px;
+    margin: 20px 0;
 }
 .mdl-idioma .bootstrap-select .btn.dropdown-toggle{
 	background-color: transparent !important;

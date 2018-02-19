@@ -33,7 +33,6 @@
 					</div>
 					<div class="header-contenido inline">
 						<p>Registro de Oportunidades</p>
-						<p>LAT Region</p>
 					</div>
 				</div>
 				<div class="col-xs-12 text-right">
