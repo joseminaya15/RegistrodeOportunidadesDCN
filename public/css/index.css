@@ -5,7 +5,8 @@ body{
 	font-family: 'RobotoRegular';
 }
 h2{
-	font-family: 'RobotoBold'
+	font-family: 'RobotoBold';
+	font-weight: 700;
 }
 p{
 	margin: 0;
@@ -15,7 +16,7 @@ h2.title{
     line-height: 36px;
 }
 h2.subtitle{
-	font-size: 20px;
+	font-size: 24px;
     margin: 5px 0;
     line-height: 24px;
 }
@@ -47,6 +48,14 @@ h2.subtitle{
 	border-radius: 0;
 	border-color: #000000;
     padding: 2px 12px;
+}
+.contenido-principal{
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #000000;
+}
+.contenido-principal h2{
+	color: #0EB48D;
 }
 .mdl-register{
 	margin: 20px 0;
