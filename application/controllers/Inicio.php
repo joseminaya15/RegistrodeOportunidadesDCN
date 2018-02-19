@@ -34,7 +34,7 @@ class Inicio extends CI_Controller {
             $productos 	 = $this->input->post('productos');
             $attach 	 = $this->input->post('attach');
             $fecha      = $this->input->post('fecha');
-            $arrayInsertPers = array('Nombre' 		=> $Nombre,
+            $arrayInsertPers = array('Nombre' 	=> $Nombre,
                                  'Apellido' 	=> $Apellido,
                                  'Correo'       => $email,
                                  'conf_correo'  => $re_email,
