@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible"  content="IE=edge">
     <meta name="viewport"               content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="description"            content="Registro de Oportunidades DCN">
-    <meta name="keywords"               content="Registro de Oportunidades DCN">
+    <meta name="description"            content="Record of Opportunities DCN">
+    <meta name="keywords"               content="Record of Opportunities DCN">
     <meta name="robots"                 content="Index,Follow">
     <meta name="date"                   content="Febrero 15, 2018"/>
     <meta name="language"               content="en">
