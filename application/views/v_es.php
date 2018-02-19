@@ -46,9 +46,10 @@
     				</div>
 				</div>
 				<div class="col-sm-6">
-					<div class="contenido">
+					<div class="contenido-principal">
 						<h2 class="subtitle">¡No dejes dinero sobre la mesa!</h2>
 						<p>Registra en este portal tus oportunidades ya declaradas en salesforce.com y te apoyaremos con el seguimiento y soporte para cerrar tus negocios lo antes posible y ganes tus puntos via <strong>Engage & Grow</strong></p>
+						<small><strong>Nota: </strong>Para poder participar deber&aacute;s estar registrado en en el programa Engage & Grow</small>
 					</div>
 					<div class="contenido">
 						<h2 class="subtitle">HPE Data Center Networking</h2>
