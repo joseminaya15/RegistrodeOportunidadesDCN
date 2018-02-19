@@ -90,6 +90,15 @@ function registrar() {
 		msj('error', 'Ingrese la fecha de cierre');
 		$('#fecha').css('border-color','red');
 		return;
+	}else {
+		if(fecha < '2017-11-01') {
+			msj('error', 'Seleccione una fecha mayor a 01/11/2017');
+			return;
+		}
+		if(fecha > '2018-31-10') {
+			msj('error', 'Seleccione una fecha menor a 31/10/2018');
+			return;
+		}
 	}
 	$.ajax({
 		data  : { Nombre 	  : Nombre,
@@ -103,7 +112,7 @@ function registrar() {
 				  productos   : productos,
 				  attach 	  : attach,
 				  fecha 	  : newdate},
-		url   : 'inicio/registrar',
+		url   : 'en/registrar',
 		type  : 'POST'
 	}).done(function(data){
 		try{

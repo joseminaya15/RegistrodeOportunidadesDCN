@@ -107,7 +107,7 @@
 				    <h2 class="title-formulario">Datos de Oportunidad</h2>
 				    <div class="form-group placeholder-static col-xs-12 p-0">
 					    <!-- <label for="oportunidad">Oportunidad</label> -->
-					    <input type="text" class="form-control" id="oportunidad" placeholder="0000000000" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="oportunidad" placeholder="0000000000" onchange="validarCampos()" maxlength="10">
 					    <span class="">OPE - </span>
 				    </div>
 				    <div class="form-group col-xs-12 p-0">
@@ -136,7 +136,7 @@
 		                                <i class="mdi mdi-date_range"></i>
 		                            </button>
 		                        </div>
-                            	<input class="form-control" type="text" id="fecha" name="fecha" maxlength="10" placeholder="dd/mm/aaaa" value="">
+                            	<input class="form-control" type="text" id="fecha" name="fecha" maxlength="10" placeholder="dd/mm/aaaa" value="" style="pointer-events: none">
                         	</div>
                         </div>
                     </div>
