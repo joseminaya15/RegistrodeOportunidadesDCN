@@ -32,7 +32,7 @@
 						<img src="<?php echo RUTA_IMG?>logo.png">
 					</div>
 					<div class="header-contenido inline">
-						<p>Registro de Oportunidades DCN - LAT</p>
+						<p>Record of Opportunities DCN - LAT</p>
 					</div>
 				</div>
 				<div class="col-xs-12 text-right">
@@ -46,20 +46,20 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="contenido-principal">
-						<h2 class="subtitle">¡No dejes dinero sobre la mesa!</h2>
-						<p>Registra en este portal tus oportunidades ya declaradas en salesforce.com y te apoyaremos con el seguimiento y soporte para cerrar tus negocios lo antes posible y ganes tus puntos via <strong>Engage & Grow</strong></p>
-						<small><strong>Nota: </strong>Para poder participar deber&aacute;s estar registrado en en el programa Engage & Grow</small>
+						<h2 class="subtitle">¡Do not leave money on the table!</h2>
+						<p>Register your opportunities already declared on salesforce.com on this portal and we will support you with the follow-up and support to close your business as soon as possible and earn your points via <strong>Engage & Grow</strong></p>
+						<small><strong>Note: </strong>In order to participate you should be registered in the program Engage & Grow</small>
 					</div>
 					<div>
 						<h2 class="subtitle">HPE Data Center Networking</h2>
-						<p>Las organizaciones quieren arquitecturas de red que sean abiertas y programables y que estén integradas en sus pilas tecnológicas de computación, almacenamiento y nube. El portafolio de redes de centro de datos HPE ofrece estas capacidades para múltiples segmentos y casos de uso.</p>
+						<p>Organizations want network architectures that are open and programmable and that are integrated into their computing, storage and cloud computing piles. The HPE data center networking portfolio offers these capabilities for multiple segments and use cases.</p>
 					</div>
 					<div class="contenido m-t-15">
 						<h2 class="subtitle">Hybrid IT</h2>
 						<p>Data Center Networking</p>
 						<div class="contenido-partner right inline">
 							<img src="<?php echo RUTA_IMG?>logo_hpe.png">
-							<small><strong>Conecta Servidores, Almacenamiento</strong></small>
+							<small><strong>Connect Servidores, Storage</strong></small>
 							<ul>
 								<li>Servers</li>
 								<li>Storage</li>
@@ -68,25 +68,25 @@
 						</div>
 						<div class="contenido-partner inline">
 							<img src="<?php echo RUTA_IMG?>logo_aruba.png">
-							<small><strong>Conecta Usuarios, dispositivos</strong></small>
+							<small><strong>Connect Users, dispositives</strong></small>
 							<ul>
 								<li>Campus & Branch</li>
 								<li>IoT (Internet of Things)</li>
 								<li>Borde (Intelligent Edge)</li>
-								<li>Movilidad (Wireless)</li>
+								<li>Mobility (Wireless)</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<form class="formulario col-sm-6 col-xs-12 m-t-20">
-					<h2 class="title-formulario">Datos personales</h2>
+					<h2 class="title-formulario">Personal information</h2>
 					<div class="form-group col-xs-12 p-0">
 					    <!-- <label for="apellido">Nombre</label> -->
-					    <input type="text" class="form-control" id="Nombre" placeholder="Nombre" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="Nombre" placeholder="Name" onchange="validarCampos()">
 				    </div>
 					<div class="form-group col-xs-12 p-0">
 					    <!-- <label for="apellido">Apellido</label> -->
-					    <input type="text" class="form-control" id="apellido" placeholder="Apellido" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="apellido" placeholder="Last name" onchange="validarCampos()">
 				    </div>
 				    <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="email">Email</label> -->
@@ -94,17 +94,17 @@
 				    </div>
 				    <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="correo">Confirmar email</label> -->
-					    <input type="email" class="form-control" id="correo" placeholder="Confirmar Email" onchange="validarCampos()">
+					    <input type="email" class="form-control" id="correo" placeholder="Confirm Email" onchange="validarCampos()">
 				    </div>
 				     <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="rol">Rol</label> -->
-					    <input type="text" class="form-control" id="rol" placeholder="Rol" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="rol" placeholder="Title" onchange="validarCampos()">
 				    </div>
 				    <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="canal">Nombre del Canal</label> -->
-					    <input type="text" class="form-control" id="canal" placeholder="Canal" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="canal" placeholder="Channel" onchange="validarCampos()">
 				    </div>
-				    <h2 class="title-formulario">Datos de Oportunidad</h2>
+				    <h2 class="title-formulario">Opportunity data</h2>
 				    <div class="form-group placeholder-static col-xs-12 p-0">
 					    <!-- <label for="oportunidad">Oportunidad</label> -->
 					    <input type="text" class="form-control" id="oportunidad" placeholder="0000000000" onchange="validarCampos()">
@@ -112,24 +112,24 @@
 				    </div>
 				    <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="cliente">Nombre del Cliente</label> -->
-					    <input type="text" class="form-control" id="cliente" placeholder="Nombre del Cliente" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="cliente" placeholder="Client name" onchange="validarCampos()">
 				    </div>
 				    <div class="mdl-select col-xs-12 p-0">
-				    	<select class="selectpicker" title="Productos asociados a la oportunidad" id="productos">
+				    	<select class="selectpicker" title="Products associated with the opportunity" id="productos">
 							<option value="FlexFabric Promo TOR">FlexFabric Promo TOR</option>
 							<option value="FlexFabric TOR (no Promo)">FlexFabric TOR (no Promo)</option>
 						</select>
 				    </div>
 				    <div class="mdl-select col-xs-12 p-0">
-				    	<select class="selectpicker" title="El Attach de DCN se realizó sobre" id="attach">
-							<option value="Servidores">Servidores</option>
-							<option value="Almacenamiento">Almacenamiento</option>
-							<option value="Hyperconverged u otros">Hyperconverged u otros</option>
+				    	<select class="selectpicker" title="The DCN Attach was performed on" id="attach">
+							<option value="Servers">Servers</option>
+							<option value="Storage">Storage</option>
+							<option value="Hyperconverged or others">Hyperconverged or others</option>
 						</select>
 				    </div>
 				    <div class="col-xs-12 p-0">
                         <div class="form-group">
-                        	<label for="cliente">Fecha de Cierre del Negocio</label>
+                        	<label for="cliente">Business Closing Date</label>
                         	<div class="mdl-input">
                         		<div class="mdl-icon">
 		                            <button type="button" class="mdl-button mdl-js-button mdl-button--icon">
@@ -141,7 +141,7 @@
                         </div>
                     </div>
 				    <div class="mdl-register col-xs-12 p-0">
-			    		<button type="button" name="boton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()">Registrar Oportunidad</button>
+			    		<button type="button" name="boton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="registrar()">Register Opportunity</button>
 				    </div>
 				</form>
 			</div>
