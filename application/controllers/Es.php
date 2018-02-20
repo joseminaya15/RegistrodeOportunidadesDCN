@@ -94,25 +94,14 @@ class Es extends CI_Controller {
                     <table align="center" cellspacing="0" cellpadding="0" border="0" style="max-width: 500px; width: 100%; margin: auto;border: 1px solid #757575;">
                       <tr>
                         <th>
-                          <table cellspacing="0" cellpadding="0" border="0" style="background-color: #000000;">
+                          <table cellspacing="0" cellpadding="0" border="0" style="background-color: #2B4356;">
                             <tbody>
                               <tr>
-                                <th style="width: 425px;text-align: left;padding-left: 20px;">
+                                <th style="width: 500px;text-align: left;padding-left: 20px;">
                                   <table cellspacing="0" cellpadding="0" border="0">
                                     <tbody>
                                       <tr style="text-align: left;">
-                                        <th style="text-align: left;"><img width="150" src="http://www.sap-latam.com/sap_business_one/public/img/logo/logo_header.png"></th>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </th>
-                                <th style="width: 75px;">
-                                  <table cellspacing="0" cellpadding="0" border="0">
-                                    <tbody>
-                                      <tr>
-                                        <td style="height: 100px;width: 25px;background-color: #54442E;"></td>
-                                        <td style="height: 100px;width: 25px;background-color: #8D6832;"></td>
-                                        <td style="height: 100px;width: 25px;background-color: #E29D2E;"></td>
+                                        <th style="text-align: left;"><img width="150" src="http://test.brainblue.com/RegistrodeOportunidadesDCN/public/img/logo.png"></th>
                                       </tr>
                                     </tbody>
                                   </table>
