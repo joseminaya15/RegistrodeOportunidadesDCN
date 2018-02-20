@@ -146,6 +146,25 @@
 				</form>
 			</div>
 		</div>
+		<!--MODAL-->
+		<div class="modal fade" id="ModalQuestion" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+	        <div class="modal-dialog modal-md text-center">
+	            <div class="modal-content">
+	                <div class="mdl-card" >
+	                    <div class="mdl-card__title p-0">
+							<img alt="" src="">
+						</div>
+					    <div class="mdl-card__supporting-text">
+	                        <p>Tu registro a sido enviado satisfactoriamente nos pondremos en contacto contigo a la brevedad</p>
+	                        <small>Equipo DCN Latinoamerica</small>
+						</div> 
+	    				<div class="mdl-card__menu">        				    
+	                        <button class="mdl-button mdl-js-button mdl-button--icon" onclick="closeModal()"><i class="mdi mdi-close"></i></button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 	</section>
 	<script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
 	<script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
