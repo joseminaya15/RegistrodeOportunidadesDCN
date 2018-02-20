@@ -83,114 +83,104 @@ class Es extends CI_Controller {
                           );    
        $this->email->initialize($configGmail);
        $this->email->from('info@sap-latam.com');
-       $this->email->to('jhonatanibericom@gmail.com');
+       $this->email->to('jminaya@brainblue.com');
        $this->email->subject('Registro de oportunidades DCN');
        $texto = '<!DOCTYPE html>
                   <html>
                   <head>
                     <title></title>
                   </head>
-                  <body style="font-family: "Open Sans",Arial,Helvetica,sans-serif;">
-                    <table align="center" cellspacing="0" cellpadding="0" border="0" style="max-width: 500px; width: 100%; margin: auto;border: 1px solid #757575;">
-                      <tr>
-                        <th>
-                          <table cellspacing="0" cellpadding="0" border="0" style="background-color: #2B4356;">
-                            <tbody>
-                              <tr>
-                                <th style="width: 500px;text-align: left;padding-left: 20px;">
-                                  <table cellspacing="0" cellpadding="0" border="0">
-                                    <tbody>
-                                      <tr style="text-align: left;">
-                                        <th style="text-align: left;"><img width="150" src="http://test.brainblue.com/RegistrodeOportunidadesDCN/public/img/logo.png"></th>
-                                      </tr>
-                                    </tbody>
+                  <body style="font-family: arial">
+                      <table align="center" cellspacing="0" cellpadding="0" border="0" style="width: 500px;border: 1px solid #757575;">
+                          <tr style="width: 500px;">
+                              <td>
+                                  <table cellspacing="0" cellpadding="0" border="0" style="background-color: #2B4356;width: 500px;">
+                                    <tr>
+                                        <td style="width: 500px;text-align: left;">
+                                            <table cellspacing="0" cellpadding="0" border="0" style="padding: 10px;">
+                                                <tr style="text-align: left;">
+                                                    <td style="text-align: left;"><img width="120" src="http://test.brainblue.com/RegistrodeOportunidadesDCN/public/img/logo.png"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
                                   </table>
-                                </th>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <table style="width: 100%;padding: 10px;">
-                            <tbody>
-                              <tr style="padding: 25px;margin: 30px;">
-                                <td style="text-align: center;"><h2 style="font-family: "Open Sans",Arial,Helvetica,sans-serif;">Datos del Cliente</h2></td>
-                              </tr>
-                              <tr>
-                                <table style="padding: 20px;" cellspacing="0" cellpadding="0" border="0">
-                                  <tbody>
-                                    <tr style="padding: 0 20px;">
-                                      <td><h2 style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Cliente:</h2></td>
-                                      <td><p style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$Nombre.'</p></td>
+                              </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <table style="width: 500px;padding: 10px;">
+                                    <tr style="padding: 25px;">
+                                        <td style="text-align: center;"><h2 style="font-family: arial">Datos del Cliente</h2></td>
                                     </tr>
-                                    <tr style="padding: 0 20px;">
-                                      <td><h2 style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Cargo:</h2></td>
-                                      <td><p  style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$rol.'</p></td>
+                                    <tr>
+                                      <table style="padding: 20px;" cellspacing="0" cellpadding="0" border="0">
+                                          <tr style="padding: 0 20px;">
+                                              <td width="80"><font style="margin: 3px 0;font-size: 18px;font-family: arial;font-weight: bold;">Cliente:</font></td>
+                                              <td><font style="margin: 3px 0;font-family: arial;font-size: 15px;">'.$Nombre.' '.$Apellido.'</font></td>
+                                          </tr>
+                                          <tr style="padding: 0 20px;">
+                                              <td width="80"><font style="margin: 3px 0;font-size: 18px;font-family: arial;font-weight: bold;">Cargo:</font></td>
+                                              <td><font  style="margin: 3px 0;font-family: arial;font-size: 15px;">'.$rol.'</font></td>
+                                          </tr>
+                                          <tr style="padding: 0 20px;">
+                                              <td width="80"><font style="margin: 3px 0;font-size: 18px;font-family: arial;font-weight: bold;">Canal:</font></td>
+                                              <td><font style="font-family: arial;font-size: 15px;">'.$canal.'</font></td>
+                                          </tr>
+                                          <tr style="padding: 0 20px;">
+                                              <td width="80"><font style="margin: 3px 0;font-size: 18px;font-family: arial;font-weight: bold;">Email:</font></td>
+                                              <td><font style="margin: 3px 0;font-family: arial;font-size: 15px;">'.$email.'</font></td>
+                                          </tr>
+                                      </table>
                                     </tr>
-                                    <tr style="padding: 0 20px;">
-                                      <td><h2 style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Canal:</td>
-                                      <td><p style="font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$canal.'</p></td>
+                                    <tr style="padding: 25px;">
+                                        <td style="text-align: center;"><h2 style="font-family: arial">Datos de oportunidad</h2></td>
                                     </tr>
-                                    <tr style="padding: 0 20px;">
-                                      <td><h2 style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Email:</h2></td>
-                                      <td><p style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$email.'</p></td>
+                                    <tr>
+                                      <td>
+                                        <table style="width: 500px;padding: 20px;" cellspacing="0" cellpadding="0">
+                                            <tr style="padding: 5px 20px;">
+                                                <td rowspan="2">1</td>
+                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">Número de oportunidad</font></td>
+                                            </tr>
+                                            <tr style="padding: 5px 10px;">
+                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">OPE - '.$oportunidad.'</font></td>
+                                            </tr>
+                                            <tr style="padding: 5px 10px;">
+                                                <td rowspan="2">2</td>
+                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">Nombre del cliente</font></td>
+                                            </tr>
+                                            <tr style="padding: 5px 10px;">
+                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">'.$cliente.' empleados</font></td>
+                                            </tr>
+                                            <tr style="padding: 5px 10px;">
+                                                <td rowspan="2">3</td>
+                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">Productos asociados a la oportunidad</font></td>
+                                            </tr>
+                                            <tr style="padding: 5px 10px;">
+                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">'.$productos.'</font></td>
+                                            </tr>
+                                            <tr style="padding: 5px 10px;">
+                                                <td rowspan="2">4</td>
+                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">El attach de DCN que se realizó</font></td>
+                                            </tr>
+                                            <tr style="padding: 5px 10px;">
+                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">'.$attach.'</font></td>
+                                            </tr>
+                                            <tr style="padding: 5px 10px;">
+                                                <td rowspan="2">5</td>
+                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">Fecha de cierre del negocio</p></td>
+                                            </tr>
+                                            <tr style="padding: 5px 10px;">
+                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">'.$fecha.'</font></td>
+                                            </tr>
+                                        </table>
+                                      </td>
                                     </tr>
-                                  </tbody>
                                 </table>
-                              </tr>
-                              <tr style="padding: 25px;margin: 30px;">
-                                <td style="text-align: center;"><h2 style="font-family: "Open Sans",Arial,Helvetica,sans-serif;">Datos de oportunidad</h2></td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
-                                    <tbody>
-                                      <tr style="padding: 5px 20px;">
-                                        <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/1.jpg""></td>
-                                        <td style="text-align: left;"><p style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Número de oportunidad</p></td>
-                                      </tr>
-                                      <tr style="padding: 5px 20px;">
-                                        <td style="text-align: left;"><p style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">OPE - '.$oportunidad.'</p></td>
-                                      </tr>
-                                      <tr style="padding: 5px 20px;">
-                                        <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/2.jpg""></td>
-                                        <td style="text-align: left;"><p style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Nombre del cliente</p></td>
-                                      </tr>
-                                      <tr style="padding: 5px 20px;">
-                                        <td style="text-align: left;"><p style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$cliente.' empleados</p></td>
-                                      </tr>
-                                      <tr style="padding: 5px 20px;">
-                                        <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/3.jpg""></td>
-                                        <td style="text-align: left;"><p style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Productos asociados a la oportunidad</p></td>
-                                      </tr>
-                                      <tr style="padding: 5px 20px;">
-                                        <td style="text-align: left;"><p style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$productos.'</p></td>
-                                      </tr>
-                                      <tr style="padding: 5px 20px;">
-                                        <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/4.jpg""></td>
-                                        <td style="text-align: left;"><p style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">El attach de DCN que se realizó</p></td>
-                                      </tr>
-                                      <tr style="padding: 5px 20px;">
-                                        <td style="text-align: left;"><p style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$attach.'</p></td>
-                                      </tr>
-                                      <tr style="padding: 5px 20px;">
-                                        <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/5.jpg""></td>
-                                        <td style="text-align: left;"><p style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Fecha de cierre del negocio</p></td>
-                                      </tr>
-                                      <tr style="padding: 5px 20px;">
-                                        <td style="text-align: left;"><p style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$fecha.'</p></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
+                              </td>
+                          </tr>
+                      </table>
                   </body>
                   </html>';
         $this->email->message($texto);
