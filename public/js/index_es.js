@@ -205,6 +205,3 @@ function cambiarIdioma(){
       }
 	});
 }
-function closeModal(){
-	modal('ModalQuestion');	
-}
