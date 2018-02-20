@@ -58,23 +58,17 @@
 						<h2 class="subtitle">Hybrid IT</h2>
 						<p>Data Center Networking</p>
 						<div class="contenido-partner right inline">
-							<img src="<?php echo RUTA_IMG?>logo_hpe.png">
-							<small><strong>Conectar Servidores, Armazenamento</strong></small>
-							<ul>
-								<li>Servidores</li>
-								<li>Armazenamento</li>
-								<li>Hyper-Converged Systems</li>
-							</ul>
-						</div>
-						<div class="contenido-partner inline">
-							<img src="<?php echo RUTA_IMG?>logo_aruba.png">
-							<small><strong>Conectar Usu&aacute;rios, dispositivos</strong></small>
-							<ul>
-								<li>Campus & Branch</li>
-								<li>IoT (Internet of Things)</li>
-								<li>Borde (Intelligent Edge)</li>
-								<li>Movilidad (Wireless)</li>
-							</ul>
+							<div class="partner-left">
+								<img src="<?php echo RUTA_IMG?>logo_hpe.png">
+							</div>
+							<div class="partner-right">
+								<small><strong>Connect Servidores, Storage</strong></small>
+								<ul>
+									<li>Servers</li>
+									<li>Storage</li>
+									<li>Hyper-Converged Systems</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
