@@ -136,7 +136,7 @@
 		                                <i class="mdi mdi-date_range"></i>
 		                            </button>
 		                        </div>
-                            	<input class="form-control" type="text" id="fecha" name="fecha" maxlength="10" placeholder="dd/mm/aaaa" value="">
+                            	<input class="form-control" type="text" id="fecha" name="fecha" maxlength="10" placeholder="dd/mm/aaaa" value="" style="pointer-events: none">
                         	</div>
                         </div>
                     </div>
