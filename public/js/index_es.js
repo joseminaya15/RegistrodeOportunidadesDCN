@@ -109,7 +109,6 @@ function registrar() {
 		try{
         	data = JSON.parse(data);
         	if(data.error == 0){
-        		//msj('error', 'Tu registro a sido enviado satisfactoriamente nos pondremos en contacto contigo a la brevedad Equipo DCN Latinoamerica.');
         		modal('ModalQuestion');
 				limpiarCampos();
         	}else {
