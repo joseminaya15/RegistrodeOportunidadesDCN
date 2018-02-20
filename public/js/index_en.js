@@ -118,6 +118,7 @@ function registrar() {
 		try{
         	data = JSON.parse(data);
         	if(data.error == 0){
+        		modal('ModalQuestion');
 				limpiarCampos();
         	}else {
         		return;
@@ -219,4 +220,7 @@ function cambiarIdioma() {
         msj('error',err.message);
       }
 	});
+}
+function closeModal(){
+	modal('ModalQuestion');	
 }

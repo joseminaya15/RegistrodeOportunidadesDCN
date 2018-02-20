@@ -11,37 +11,37 @@ function registrar() {
 	var attach      = $('#attach').val();
 	var fecha		= $('#fecha').val();
 	var newdate = fecha.split("/").reverse().join("-");
-	if(Nombre == '' && Apellido == '' && email == '' && re_email == '' && rol == '' && canal == '' && oportunidad == '' && cliente == '' && productos == '' && attach == '') {
+	if(Nombre == '' && Apellido == '' && email == '' && re_email == '' && rol == '' && canal == '' && oportunidad == '' && cliente == '' && productos == '' && attach == ''){
 		validarCampos();
 	}
-	if(Nombre == null || Nombre == '') {
+	if(Nombre == null || Nombre == ''){
 		$('#Nombre').css('border-color','red');
 		msj('error', 'Ingrese su nombre');
 		return;
 	}
-	if(Apellido == null || Apellido == '') {
+	if(Apellido == null || Apellido == ''){
 		msj('error', 'Ingrese su apellido');
 		$('#Apellido').css('border-color','red');
 		return;
 	}
-	if(email == null || email == '') {
+	if(email == null || email == ''){
 		msj('error', 'Ingrese su email');
 		$('#email').css('border-color','red');
 		return;
 	}
-	if (!validateEmail(email)) {
+	if (!validateEmail(email)){
 		msj('error', 'El formato de email ingresado es incorrecto');
 		$('#email').css('border-color','red');
 		return;
 	}else {
 		$('#email').css('border-color','#C6C9CA');
 	}
-	if(re_email == null || re_email == '') {
+	if(re_email == null || re_email == ''){
 		msj('error', 'Repita su email');
 		$('#correo').css('border-color','red');
 		return;
 	}
-	if (!validateEmail(re_email)) {
+	if (!validateEmail(re_email)){
 		msj('error', 'El formato de email ingresado es incorrecto');
 		$('#correo').css('border-color','red');
 		return;
@@ -52,41 +52,41 @@ function registrar() {
 		msj('error', 'uno de los emails ingresados no coincide con el otro');
 		return;
 	}
-	if(rol == null || rol == '') {
+	if(rol == null || rol == ''){
 		msj('error', 'Ingrese su rol');
 		$('#rol').css('border-color','red');
 		return;
 	}
-	if(canal == null || canal == '') {
+	if(canal == null || canal == ''){
 		msj('error', 'Ingrese su canal');
 		$('#canal').css('border-color','red');
 		return;
 	}
-	if(oportunidad == null || oportunidad == '') {
+	if(oportunidad == null || oportunidad == ''){
 		msj('error', 'Ingrese su número de oportunidad de HPE');
 		$('#oportunidad').css('border-color','red');
 		return;
 	}
-	if(cliente == null || cliente == '') {
+	if(cliente == null || cliente == ''){
 		msj('error', 'Ingrese el nombre del cliente');
 		$('#cliente').css('border-color','red');
 		return;
 	}
-	if(productos == null || productos == '') {
+	if(productos == null || productos == ''){
 		msj('error', 'Ingrese los productos');
 		$('#productos').css('border-color','red');
 		return;
 	}else {
 		$('#productos').parents().find('.btn-default').css('border-color','#C6C9CA');
 	}
-	if(attach == null || attach == '') {
+	if(attach == null || attach == ''){
 		msj('error', 'Ingrese el Attach de DCN que se realizó');
 		$('#attach').css('border-color','red');
 		return;
 	}else {
 		$('#attach').css('border-color','#C6C9CA');
 	}
-	if(fecha == null || fecha == '') {
+	if(fecha == null || fecha == ''){
 		msj('error', 'Ingrese la fecha de cierre');
 		$('#fecha').css('border-color','red');
 		return;
