@@ -10,51 +10,52 @@ class Es extends CI_Controller {
         $this->output->set_header('Cache-Control: post-check=0, pre-check=0',false);
         $this->output->set_header('Pragma: no-cache');
     }
-	public function index()
-	{
+	public function index(){
 		$data['nombre'] = '';
 		$this->load->view('v_es', $data);
 	}
-	function registrar() {
-		$data['error']  = EXIT_ERROR;
-        $data['msj']    = null;
+
+	function registrar(){
+		$data['error']   = EXIT_ERROR;
+        $data['msj'] = null;
         try {
-            $Nombre 	 = $this->input->post('Nombre');
-            $Apellido 	 = $this->input->post('Apellido');
-            $email 		 = $this->input->post('email');
-            $re_email 	 = $this->input->post('re_email');
-            $rol 		 = $this->input->post('rol');
-            $canal 		 = $this->input->post('canal');
+            $Nombre 	   = $this->input->post('Nombre');
+            $Apellido    = $this->input->post('Apellido');
+            $email 		   = $this->input->post('email');
+            $re_email    = $this->input->post('re_email');
+            $rol 		     = $this->input->post('rol');
+            $canal 		   = $this->input->post('canal');
             $oportunidad = $this->input->post('oportunidad');
             $cliente     = $this->input->post('cliente');
             $productos 	 = $this->input->post('productos');
-            $attach 	 = $this->input->post('attach');
-            $fecha      = $this->input->post('fecha');
-            $arrayInsertPers = array('Nombre' 	=> $Nombre,
-                                 'Apellido' 	=> $Apellido,
-                                 'Correo'       => $email,
-                                 'conf_correo'  => $re_email,
-                                 'Rol'  		=> $rol,
-                                 'Nombre_canal' => $canal);
+            $attach 	   = $this->input->post('attach');
+            $fecha       = $this->input->post('fecha');
+            $arrayInsertPers = array('Nombre' 	    => $Nombre,
+                                     'Apellido' 	  => $Apellido,
+                                     'Correo'       => $email,
+                                     'conf_correo'  => $re_email,
+                                     'Rol'  		    => $rol,
+                                     'Nombre_canal' => $canal);
             $datoInsertPers = $this->M_solicitud->insertarDatos($arrayInsertPers, 'persona');
-            $arrayInsert = array('Numero_opp'     => $oportunidad,
-                                 'Nombre_cliente' => $cliente,
-                                 'Productos'      => $productos,
-                                 'attach'         => $attach,
-                             	 'fecha_cierre'   => $fecha,
-                             	 'Id_pers' 		  => $datoInsertPers['Id']);
-            $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'oportunidad');
+            $arrayInsert    = array('Numero_opp'     => $oportunidad,
+                                    'Nombre_cliente' => $cliente,
+                                    'Productos'      => $productos,
+                                    'attach'         => $attach,
+                             	      'fecha_cierre'   => $fecha,
+                             	      'Id_pers' 		   => $datoInsertPers['Id']);
+            $datoInsert  = $this->M_solicitud->insertarDatos($arrayInsert, 'oportunidad');
           $data['error'] = EXIT_SUCCESS;
         } catch (Exception $e) {
             $data['msj'] = $e->getMessage();
         }
         echo json_encode($data);
 	}
-    function cambiarIdioma() {
-    $data['error'] = EXIT_ERROR;
-        $data['msj']   = null;
+
+  function cambiarIdioma(){
+    $data['error']   = EXIT_ERROR;
+        $data['msj'] = null;
         try {
-            $idioma = $this->input->post('idioma');
+            $idioma  = $this->input->post('idioma');
             $session = array('idioma' => $idioma);
             $this->session->set_userdata($session);
             $data['error'] = EXIT_SUCCESS;
