@@ -78,20 +78,30 @@ h2.subtitle{
 	margin-right: 13px;
 }
 .contenido-partner{
-	width: 48.5%;
+	width: 100%;
 	border: 1px solid #0EB48D;
 	padding: 15px;
-	height: 240px;
     margin-top: 10px;
 }
 .contenido-partner small{
 	display: block;
+	font-size: 14px;
 }
 .contenido-partner img{
-	max-width: 125px;
+	max-width: 135px;
+}
+.partner-left{
+	display: inline-block;
+	width: 100%;
+	max-width: calc(100% - 245px);
+}
+.partner-right{
+	display: inline-block;
+	max-width: 250px;
+	vertical-align: middle;
 }
 ul li{
-    font-size: 13px;
+    font-size: 14px;
     line-height: 20px;
 }
 .mdl-register{
@@ -177,6 +187,13 @@ ul li{
 	    font-size: 14px;
 	    max-width: 120px;
 	    float: right;
+	}
+	.partner-left,
+	.partner-right{
+		max-width: 100%;
+	}
+	.partner-left{
+		text-align: center;
 	}
 }
 /* DateTimePicker */
