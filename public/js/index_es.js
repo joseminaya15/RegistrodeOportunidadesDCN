@@ -111,35 +111,32 @@ function registrar() {
         	if(data.error == 0){
         		modal('ModalQuestion');
 				limpiarCampos();
-        	}else {
-        		return;
-        	}
+        	}else {return;}
       } catch (err){
         msj('error',err.message);
       }
 	});
 }
-function limpiarCampos() {
-	var Nombre 		= $('#Nombre').val(null);
-	var Apellido 	= $('#apellido').val(null);
-	var email 		= $('#email').val(null);
-	var re_email    = $('#correo').val(null);
-	var rol 		= $('#rol').val(null);
-	var canal 		= $('#canal').val(null);
-	var oportunidad = $('#oportunidad').val(null);
-	var cliente     = $('#cliente').val(null);
-	var productos   = $('#productos').val('0');
+function limpiarCampos(){
+	$('#Nombre').val(null);
+	$('#apellido').val(null);
+	$('#email').val(null);
+	$('#correo').val(null);
+	$('#rol').val(null);
+	$('#canal').val(null);
+	$('#oportunidad').val(null);
+	$('#cliente').val(null);
+	$('#productos').val('0');
 	$('.selectpicker').selectpicker('refresh');
-	var attach      = $('#attach').val('0');
+	$('#attach').val('0');
 	$('.selectpicker').selectpicker('refresh');
-	var fecha		= $('#fecha').val(null);
+	$('#fecha').val(null);
 }
-function soloLetras(e) {
+function soloLetras(e){
     key 	   = e.keyCode || e.which;
     tecla 	   = String.fromCharCode(key).toLowerCase();
     letras     = " áéíóúabcdefghijklmnñopqrstuvwxyz";
     especiales = "8-37-39-46";
-
     tecla_especial = false
     for(var i in especiales){
          if(key == especiales[i]){
@@ -151,18 +148,16 @@ function soloLetras(e) {
          return false;
      }
  }
- function valida(e) {
+ function valida(e){
     tecla = (document.all) ? e.keyCode : e.which;
-    //Tecla de retroceso para borrar, siempre la permite
     if (tecla==8){
         return true;
     }
-    // Patron de entrada, en este caso solo acepta números
     patron =/[0-9]/;
     tecla_final = String.fromCharCode(tecla);
     return patron.test(tecla_final);
 }
-function validateEmail(email) {
+function validateEmail(email){
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
@@ -171,13 +166,13 @@ function validarCampos(){
 	var formvalido = true;
 	$inputs.each(function() {
 		if(isEmpty($(this).val())){
-				$(this).css('border-color','red');
-				$('.btn-default').css('border-color','#C6C9CA');
-				$('#fecha').css('border-color','#C6C9CA');
-				formvalido = false;
+			$(this).css('border-color','red');
+			$('.btn-default').css('border-color','#C6C9CA');
+			$('#fecha').css('border-color','#C6C9CA');
+			formvalido = false;
 		}else{
-				$(this).css('border-color','#C6C9CA');
-				$('#fecha').css('border-color','#C6C9CA');
+			$(this).css('border-color','#C6C9CA');
+			$('#fecha').css('border-color','#C6C9CA');
 		}
 	});
 	return formvalido;
@@ -187,26 +182,24 @@ function isEmpty(val){
     	return false;
 		return true;
 }
-function cambiarIdioma() {
+function cambiarIdioma(){
 	var idioma = $('#idioma').val();
-	if(idioma == 'Español') {
+	if(idioma == 'Español'){
 		location.href = 'Es';
-	}else if(idioma == 'Inglés') {
+	}else if(idioma == 'Inglés'){
 		location.href = 'En';
-	}else if(idioma == 'Portugués') {
+	}else if(idioma == 'Portugués'){
 		location.href = 'Pt';
 	}
 	$.ajax({
-		data  : {idioma   : idioma},
+		data  : {idioma : idioma},
 		url   : 'es/cambiarIdioma',
 		type  : 'POST'
 	}).done(function(data){
 		try{
         data = JSON.parse(data);
         if(data.error == 0){
-        }else {
-        	return;
-        }
+        }else {return;}
       } catch (err){
         msj('error',err.message);
       }
