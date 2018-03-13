@@ -45,6 +45,7 @@ class Es extends CI_Controller {
                              	    'Id_pers' 		 => $datoInsertPers['Id']);
             $datoInsert  = $this->M_solicitud->insertarDatos($arrayInsert, 'oportunidad');
             $this->sendEmail($email, $Nombre, $Apellido, $rol, $canal, $oportunidad, $cliente, $productos, $attach, $fecha);
+            $this->sendEmailCliente();
             $data['error'] = EXIT_SUCCESS;
         } catch (Exception $e) {
             $data['msj'] = $e->getMessage();
@@ -83,7 +84,7 @@ class Es extends CI_Controller {
                           );    
        $this->email->initialize($configGmail);
        $this->email->from('info@sap-latam.com');
-       $this->email->to('jhonatanibericom@gmail.com');
+       $this->email->to('jose.minayac15@gmail.com');
        $this->email->subject('Registro de oportunidades DCN');
        $texto = '<!DOCTYPE html>
                   <html>
@@ -204,6 +205,35 @@ class Es extends CI_Controller {
                     </table>
                   </body>
                   </html>';
+        $this->email->message($texto);
+        $this->email->send();
+        $data['error'] = EXIT_SUCCESS;
+      }catch (Exception $e){
+        $data['msj'] = $e->getMessage();
+      }
+      return json_encode(array_map('utf8_encode', $data));
+    }
+
+    function sendEmailCliente() {
+      $data['error'] = EXIT_ERROR;
+      $data['msj']   = null;
+      try {  
+       $this->load->library("email");
+       $configGmail = array(
+                            'protocol'  => 'smtp',
+                            'smtp_host' => 'smtpout.secureserver.net',
+                            'smtp_port' => 3535,
+                            'smtp_user' => 'confirmaciones@merino.com.pe',
+                            'smtp_pass' => 'cFm$17Pe',
+                            'mailtype'  => 'html',
+                            'charset'   => 'utf-8',
+                            'newline'   => "\r\n"
+                          );    
+        $this->email->initialize($configGmail);
+        $this->email->from('info@sap-latam.com');
+        $this->email->to('jose.minayac15@gmail.com');
+        $this->email->subject('Registro de oportunidades DCN');
+        $texto = '';
         $this->email->message($texto);
         $this->email->send();
         $data['error'] = EXIT_SUCCESS;
