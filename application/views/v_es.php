@@ -146,7 +146,8 @@
 	            <div class="modal-content">
 	                <div class="mdl-card">
 					    <div class="mdl-card__supporting-text">
-					    	<h2>¡Tu registro ha sido enviado satisfactoriamente!</h2>
+					    	<h2>PERFECTO&#33;</h2>
+					    	<h2>Tu registro ha sido enviado satisfactoriamente.</h2>
 	                        <p>Nos pondremos en contacto contigo a la brevedad</p>
 	                        <small>Equipo DCN Latinoamerica</small>
 						</div> 
