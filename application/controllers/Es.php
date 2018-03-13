@@ -212,7 +212,46 @@ class Es extends CI_Controller {
         $this->email->from('info@sap-latam.com');
         $this->email->to('jose.minayac15@gmail.com');
         $this->email->subject('Registro de oportunidades DCN');
-        $texto = '';
+        $texto = '<!DOCTYPE html>
+                  <html>
+                  <head>
+                    <title></title>
+                  </head>
+                  <body style="font-family: arial">
+                      <table align="center" cellspacing="0" cellpadding="0" border="0" style="width: 500px;border: 1px solid #757575;">
+                          <tr style="width: 500px;">
+                              <td>
+                                  <table cellspacing="0" cellpadding="0" border="0" style="background-color: #2B4356;width: 500px;">
+                                    <tr>
+                                        <td style="width: 500px;text-align: left;">
+                                            <table cellspacing="0" cellpadding="0" border="0" style="padding: 10px;">
+                                                <tr style="text-align: left;">
+                                                    <td style="text-align: left;"><img width="120" src="http://test.brainblue.com/RegistrodeOportunidadesDCN/public/img/logo.png"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                  </table>
+                              </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <table style="width: 500px;padding: 10px;">
+                                    <tr>
+                                        <td style="text-align: center;padding: 25px;"><font style="font-family: arial;font-size: 24px;font-weight: bold;">Tu registro ha sido enviado satisfactoriamente.</font></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;padding: 0 25px;"><font style="font-family: arial;font-size: 16px;">Nos pondremos en contacto contigo a la brevedad</font></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;padding-bottom: 20px;"><font style="font-family: arial;font-size: 12px;">Equipo DCN Latinoamerica</font></td>
+                                    </tr>
+                                </table>
+                              </td>
+                          </tr>
+                      </table>
+                  </body>
+                  </html>';
         $this->email->message($texto);
         $this->email->send();
         $data['error'] = EXIT_SUCCESS;
