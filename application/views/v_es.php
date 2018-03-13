@@ -142,18 +142,16 @@
 		</div>
 		<!--MODAL-->
 		<div class="modal fade" id="ModalQuestion" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-	        <div class="modal-dialog modal-md text-center">
+	        <div class="modal-dialog modal-sm text-center">
 	            <div class="modal-content">
-	                <div class="mdl-card" >
-	                    <div class="mdl-card__title p-0">
-							<img alt="" src="">
-						</div>
+	                <div class="mdl-card">
 					    <div class="mdl-card__supporting-text">
-	                        <p>Tu registro a sido enviado satisfactoriamente nos pondremos en contacto contigo a la brevedad</p>
+					    	<h2>¡Tu registro ha sido enviado satisfactoriamente!</h2>
+	                        <p>Nos pondremos en contacto contigo a la brevedad</p>
 	                        <small>Equipo DCN Latinoamerica</small>
 						</div> 
-	    				<div class="mdl-card__menu">        				    
-	                        <button class="mdl-button mdl-js-button mdl-button--icon" onclick="closeModal()"><i class="mdi mdi-close"></i></button>
+	    				<div class="mdl-card__actions">        				    
+	                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" data-dismiss="modal">Aceptar</button>
 	                    </div>
 	                </div>
 	            </div>
