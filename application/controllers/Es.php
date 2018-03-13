@@ -45,7 +45,7 @@ class Es extends CI_Controller {
                              	    'Id_pers' 		     => $datoInsertPers['Id']);
             $datoInsert  = $this->M_solicitud->insertarDatos($arrayInsert, 'oportunidad');
             $this->sendEmail($email, $Nombre, $Apellido, $rol, $canal, $oportunidad, $cliente, $productos, $attach, $fecha);
-            $this->sendEmailCliente();
+            $this->sendEmailCliente($email);
             $data['error'] = EXIT_SUCCESS;
         } catch (Exception $e) {
             $data['msj'] = $e->getMessage();
@@ -84,7 +84,7 @@ class Es extends CI_Controller {
                           );    
        $this->email->initialize($configGmail);
        $this->email->from('info@sap-latam.com');
-       $this->email->to('jose.minayac15@gmail.com');
+       $this->email->to('dcnlatam@hpe.com');
        $this->email->subject('Registro de oportunidades DCN');
        $texto = '<!DOCTYPE html>
                   <html>
@@ -193,7 +193,7 @@ class Es extends CI_Controller {
       return json_encode(array_map('utf8_encode', $data));
     }
 
-    function sendEmailCliente() {
+    function sendEmailCliente($email) {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try {  
@@ -210,7 +210,7 @@ class Es extends CI_Controller {
                           );    
         $this->email->initialize($configGmail);
         $this->email->from('info@sap-latam.com');
-        $this->email->to('jose.minayac15@gmail.com');
+        $this->email->to($email);
         $this->email->subject('Registro de oportunidades DCN');
         $texto = '<!DOCTYPE html>
                   <html>
