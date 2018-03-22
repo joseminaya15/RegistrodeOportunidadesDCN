@@ -171,6 +171,55 @@ ul li{
     left: 12px;
     color: #999999;
 }
+/*ADMIN*/
+.mdl-container{
+	max-width: 1350px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-transition: max-width .3s ease-in-out, transform .3s ease-in-out;
+	-moz-transition: max-width .3s ease-in-out, transform .3s ease-in-out;
+	-ms-transition: max-width .3s ease-in-out, transform .3s ease-in-out;
+	-o-transition: max-width .3s ease-in-out, transform .3s ease-in-out;
+	transition: max-width .3s ease-in-out, transform .3s ease-in-out;
+}
+.mdl-card-table{
+	width: 100%;
+	color: #757575;
+}
+.mdl-card-table .dataTables_filter{
+    position: relative;
+    right: 15px;
+    margin-top: 15px;
+}
+.mdl-card-table .dt-buttons{
+	padding: 15px;
+}
+table.dataTable.no-footer{
+	margin-bottom: 30px;
+}
+.dataTables_wrapper .dataTables_paginate{
+    position: relative;
+    right: 15px;
+    bottom: 15px;
+}
+.dataTables_info{
+	margin: 15px;
+    padding: 0;
+}
+.dataTables_wrapper .dataTables_filter input{
+	border-radius: 5px;
+    border: 2px solid #a2a2a2;
+    height: 30px;
+}
 /*MODAL*/
 .modal-backdrop.in {
     opacity: .8;

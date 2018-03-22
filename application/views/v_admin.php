@@ -27,9 +27,20 @@
     <link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.css?v=<?php echo time();?>">
 <body>
     <section id="principal">
+        <div class="header col-xs-12">
+            <div class="col-xs-12">
+                <div class="col-xs-6 text-left p-0">
+                    <img src="<?php echo RUTA_IMG?>logo/logo_header.png">
+                </div>
+                <div class="col-xs-6 text-right p-0">
+                    <p>Registro de oportunidades DCN</p>
+                </div>
+            </div>
+        </div>
         <div id="content" class="mdl-container">
-            <img class="logo-home logo-table" src="<?php echo RUTA_IMG?>logo/logo_header.png">
-            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()">Cerrar Sesión</a>
+            <div class="col-xs-12 text-right p-0">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()">Cerrar Sesión</button> 
+            </div>
             <div class="mdl-card mdl-card-table">
                 <div class="table-responsive">
                     <table id="example" class="display nowrap table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
