@@ -20,6 +20,27 @@ h2.subtitle{
     margin: 5px 0;
     line-height: 24px;
 }
+.js-flex{
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+}
+.js-flex .js-flex--left{
+	justify-content: flex-start;
+	width: 100%;
+}
+.js-flex .js-flex--left img{
+	width: 100%;
+	max-width: 150px;
+}
+.js-flex .js-flex--right{
+	justify-content: flex-end;
+	width: 100%;
+	text-align: right;
+}
+.js-flex .js-flex--right p{
+	font-size: 18px;
+}
 .inline{
 	display: inline-block;
 	vertical-align: middle;

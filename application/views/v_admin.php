@@ -28,11 +28,11 @@
 <body>
     <section id="principal">
         <div class="header col-xs-12">
-            <div class="col-xs-12">
-                <div class="col-xs-6 text-left p-0">
+            <div class="js-flex">
+                <div class="js-flex--left">
                     <img src="<?php echo RUTA_IMG?>logo/logo_header.png">
                 </div>
-                <div class="col-xs-6 text-right p-0">
+                <div class="js-flex--right">
                     <p>Registro de oportunidades DCN</p>
                 </div>
             </div>
