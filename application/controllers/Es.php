@@ -84,7 +84,8 @@ class Es extends CI_Controller {
                           );    
        $this->email->initialize($configGmail);
        $this->email->from('info@marketinghpe.com');
-       $this->email->to('dcnlatam@hpe.com');
+       // $this->email->to('dcnlatam@hpe.com');
+       $this->email->to('jose.minayac15@gmail.com');
        $this->email->subject('Registro de oportunidades DCN');
        $texto = '<!DOCTYPE html>
                   <html>

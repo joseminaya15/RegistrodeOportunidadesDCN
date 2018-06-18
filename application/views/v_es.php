@@ -32,7 +32,7 @@
 						<img src="<?php echo RUTA_IMG?>logo.png">
 					</div>
 					<div class="header-contenido inline">
-						<p>Registro de Oportunidades DCN - LAT</p>
+						<p>HPE Datacenter Networking Latinoam&eacute;rica</p>
 					</div>
 				</div>
 				<div class="col-xs-12 text-right">
@@ -46,16 +46,18 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="contenido-principal">
-						<h2 class="subtitle">¡No dejes dinero sobre la mesa!</h2>
-						<p>Registra en este portal tus oportunidades ya declaradas en salesforce.com y te apoyaremos con el seguimiento y soporte para cerrar tus negocios lo antes posible y ganes tus puntos via <strong>Engage & Grow</strong></p>
+						<h2 class="js-title">Registro de Oportunidades HPE DCN LAT</h2>
+						<h2 class="subtitle">Queremos ayudarte a acelerar tus ventas y a ganar m&aacute;s puntos.</h2>
+						<p>Registra en este portal tus oportunidades ya declaradas en <a href="https://www.salesforce.com/mx/?ir=1" target="_blank">salesforce.com</a> y te apoyaremos con el seguimiento y soporte para cerrar tus negocios lo antes posible y ganes tus puntos via <strong>Engage & Grow</strong></p>
 						<small><strong>Nota: </strong>Para poder participar deber&aacute;s estar registrado en en el programa Engage & Grow</small>
 					</div>
 					<div>
 						<h2 class="subtitle">HPE Data Center Networking</h2>
-						<p>Las organizaciones quieren arquitecturas de red que sean abiertas y programables y que estén integradas en sus pilas tecnológicas de computación, almacenamiento y nube. El portafolio de redes de centro de datos HPE ofrece estas capacidades para múltiples segmentos y casos de uso.</p>
+						<p>Las organizaciones quieren arquitecturas de red que sean abiertas y programables y que estén integradas en sus pilas tecnológicas de computación, almacenamiento y nube. El portafolio de redes de centro de datos HPE ofrece estas capacidades para m&uacute;ltiples segmentos y casos de uso.</p>
 					</div>
 					<div class="contenido m-t-15">
-						<h2 class="subtitle">Hybrid IT</h2>
+						<img src="<?php echo RUTA_IMG?>logo/cuadro-dcn.png">
+						<!-- <h2 class="subtitle">Hybrid IT</h2>
 						<p>Data Center Networking</p>
 						<div class="contenido-partner right inline">
 							<div class="partner-left">
@@ -69,7 +71,7 @@
 									<li>Hyper-Converged Systems</li>
 								</ul>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<form class="formulario col-sm-6 col-xs-12 m-t-20">
@@ -145,14 +147,16 @@
 	        <div class="modal-dialog modal-sm text-center">
 	            <div class="modal-content">
 	                <div class="mdl-card">
-					    <div class="mdl-card__supporting-text">
-					    	<h2>PERFECTO&#33;</h2>
-					    	<h2>Tu registro ha sido enviado satisfactoriamente.</h2>
+	                	<div class="mdl-card__title p-b-0">
+					    	<h2>¡Perfecto&#33;</h2>
+	                	</div>
+					    <div class="mdl-card__supporting-text p-t-0">
+					    	<h2>Tu registro ha sido grabado correctamente.</h2>
 	                        <p>Nos pondremos en contacto contigo a la brevedad</p>
-	                        <small>Equipo DCN Latinoamerica</small>
+	                        <small>Equipo DCN Latinoam&eacute;rica</small>
 						</div> 
 	    				<div class="mdl-card__actions">        				    
-	                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" data-dismiss="modal">Aceptar</button>
+	                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" data-dismiss="modal">Cerrar</button>
 	                    </div>
 	                </div>
 	            </div>

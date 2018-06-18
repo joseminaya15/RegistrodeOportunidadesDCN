@@ -6,10 +6,16 @@ body{
 }
 h2{
 	font-family: 'RobotoBold';
-	font-weight: 700;
 }
 p{
 	margin: 0;
+}
+h2.js-title{
+	color: #000000 !important;
+	font-family: 'RobotoRegular';
+	font-size: 24px;
+	margin-top: 0;
+	line-height: 28px;
 }
 h2.title{
     font-size: 36px;
@@ -81,6 +87,11 @@ h2.subtitle{
 }
 .contenido-principal h2{
 	color: #0EB48D;
+}
+.contenido-principal p a{
+	color: #000000;
+	text-decoration: none;
+	font-family: 'RobotoBold';
 }
 .contenido h2{
 	border: 1px solid #000000;
@@ -279,30 +290,40 @@ table.dataTable.no-footer{
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.modal .mdl-card__title h2{
+	color: #01a982;
+	margin: 10px 0;
+	font-size: 32px;
+	line-height: 36px;
+}
 .modal .mdl-card__supporting-text{
 	width: 100%;
     padding: 20px;
     text-align: left;
+    color: #000000
 }
 .modal .mdl-card__supporting-text h2{
-    font-size: 23px;
-    line-height: 26px;
-    color: #000000;
-    margin: 10px 0;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 12px 0;
+	font-family: 'RobotoRegular';
 }
 .modal .mdl-card__supporting-text p{
     font-size: 16px;
     line-height: 22px;
-    color: #757575;
     margin-bottom: 10px;
+}
+.modal .mdl-card__supporting-text small{
+	color: #000000
 }
 .modal .mdl-card__actions{
     padding: 20px;
     text-align: right;
 }
 .modal .mdl-card__actions button{
-    background-color: #000000;
+    background-color: #01a982;
     color: #FFFFFF;
+    font-family: 'RobotoBold';
 }
 @media ( max-width: 1200px ){
 	.contenido-partner{
