@@ -601,3 +601,8 @@ header.dtp-header .dtp-actual-year {
 	font-size: 18px;
 	vertical-align: middle;
 }
+/*TABLE*/
+.table-bordered>thead>tr>th,
+.table-bordered>tbody>tr>td{
+	font-size: 14px;
+}
