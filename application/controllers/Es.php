@@ -110,13 +110,13 @@ class Es extends CI_Controller {
                               </td>
                           </tr>
                           <tr>
-                            <td>
-                                <table style="width: 500px;padding: 10px;">
-                                    <tr style="padding: 25px;">
-                                        <td style="text-align: center;"><h2 style="font-family: arial">Datos del Cliente</h2></td>
+                            <td style="padding: 20px 0;">
+                                <table style="width: 500px;" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td style="text-align: center;padding:20px;"><font style="font-family: arial;font-size: 24px;font-weight: 600;">Datos del Cliente</font></td>
                                     </tr>
                                     <tr>
-                                      <table style="padding: 20px;" cellspacing="0" cellpadding="0" border="0">
+                                      <table style="width: 400px;" align="center" cellspacing="0" cellpadding="0" border="0">
                                           <tr style="padding: 0 20px;">
                                               <td width="80"><font style="margin: 3px 0;font-size: 18px;font-family: arial;font-weight: bold;">Cliente:</font></td>
                                               <td><font style="margin: 3px 0;font-family: arial;font-size: 15px;">'.$Nombre.' '.$Apellido.'</font></td>
@@ -135,43 +135,43 @@ class Es extends CI_Controller {
                                           </tr>
                                       </table>
                                     </tr>
-                                    <tr style="padding: 25px;">
-                                        <td style="text-align: center;"><h2 style="font-family: arial">Datos de oportunidad</h2></td>
+                                    <tr>
+                                        <td style="text-align: center;padding:20px;"><font style="font-family: arial;font-size:24px;font-weight: 600;">Datos de oportunidad</font></td>
                                     </tr>
                                     <tr>
                                       <td>
-                                        <table style="width: 500px;padding: 20px;" cellspacing="0" cellpadding="0">
+                                        <table style="width: 400px;" align="center" cellspacing="0" cellpadding="0">
                                             <tr style="padding: 5px 20px;">
-                                                <td rowspan="2">1</td>
-                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">Número de oportunidad</font></td>
+                                                <td rowspan="2" style="padding: 5px;">1</td>
+                                                <td style="text-align: left;padding: 3px 0"><font style="margin: 0;font-family: arial;font-size:16px;font-weight:bold;">Número de oportunidad</font></td>
                                             </tr>
                                             <tr style="padding: 5px 10px;">
                                                 <td style="text-align: left;"><font style="margin: 0;font-family: arial">OPE - '.$oportunidad.'</font></td>
                                             </tr>
                                             <tr style="padding: 5px 10px;">
-                                                <td rowspan="2">2</td>
-                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">Nombre del cliente</font></td>
+                                                <td rowspan="2" style="padding: 5px;">2</td>
+                                                <td style="text-align: left;padding: 3px 0"><font style="margin: 0;font-family: arial;font-size:16px;font-weight:bold;">Nombre del cliente</font></td>
                                             </tr>
                                             <tr style="padding: 5px 10px;">
                                                 <td style="text-align: left;"><font style="margin: 0;font-family: arial">'.$cliente.' empleados</font></td>
                                             </tr>
                                             <tr style="padding: 5px 10px;">
-                                                <td rowspan="2">3</td>
-                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">Productos asociados a la oportunidad</font></td>
+                                                <td rowspan="2" style="padding: 5px;">3</td>
+                                                <td style="text-align: left;padding: 3px 0"><font style="margin: 0;font-family: arial;font-size:16px;font-weight:bold;">Productos asociados a la oportunidad</font></td>
                                             </tr>
                                             <tr style="padding: 5px 10px;">
                                                 <td style="text-align: left;"><font style="margin: 0;font-family: arial">'.$productos.'</font></td>
                                             </tr>
                                             <tr style="padding: 5px 10px;">
-                                                <td rowspan="2">4</td>
-                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">El attach de DCN que se realizó</font></td>
+                                                <td rowspan="2" style="padding: 5px;">4</td>
+                                                <td style="text-align: left;padding: 3px 0"><font style="margin: 0;font-family: arial;font-size:16px;font-weight:bold;">El attach de DCN que se realizó</font></td>
                                             </tr>
                                             <tr style="padding: 5px 10px;">
                                                 <td style="text-align: left;"><font style="margin: 0;font-family: arial">'.$attach.'</font></td>
                                             </tr>
                                             <tr style="padding: 5px 10px;">
-                                                <td rowspan="2">5</td>
-                                                <td style="text-align: left;"><font style="margin: 0;font-family: arial">Fecha de cierre del negocio</p></td>
+                                                <td rowspan="2" style="padding: 5px;">5</td>
+                                                <td style="text-align: left;padding: 3px 0"><font style="margin: 0;font-family: arial;font-size:16px;font-weight:bold;">Fecha de cierre del negocio</p></td>
                                             </tr>
                                             <tr style="padding: 5px 10px;">
                                                 <td style="text-align: left;"><font style="margin: 0;font-family: arial">'.$fecha.'</font></td>
@@ -203,8 +203,8 @@ class Es extends CI_Controller {
                             'protocol'  => 'smtp',
                             'smtp_host' => 'smtpout.secureserver.net',
                             'smtp_port' => 3535,
-                            'smtp_user' => 'confirmaciones@merino.com.pe',
-                            'smtp_pass' => 'cFm$17Pe',
+                            'smtp_user' => 'info@marketinghpe.com',
+                            'smtp_pass' => 'hpeinfo18',
                             'mailtype'  => 'html',
                             'charset'   => 'utf-8',
                             'newline'   => "\r\n"
@@ -237,7 +237,7 @@ class Es extends CI_Controller {
                           </tr>
                           <tr>
                             <td>
-                                <table style="width: 500px;padding: 10px;">
+                                <table style="width: 500px;">
                                     <tr>
                                         <td style="text-align: center;padding: 25px;"><font style="font-family: arial;font-size: 24px;font-weight: bold;">Tu registro ha sido enviado satisfactoriamente.</font></td>
                                     </tr>
