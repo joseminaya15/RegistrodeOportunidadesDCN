@@ -76,14 +76,14 @@ class Es extends CI_Controller {
                             'protocol'  => 'smtp',
                             'smtp_host' => 'smtpout.secureserver.net',
                             'smtp_port' => 3535,
-                            'smtp_user' => 'confirmaciones@merino.com.pe',
-                            'smtp_pass' => 'cFm$17Pe',
+                            'smtp_user' => 'info@marketinghpe.com',
+                            'smtp_pass' => 'hpeinfo18',
                             'mailtype'  => 'html',
                             'charset'   => 'utf-8',
                             'newline'   => "\r\n"
                           );    
        $this->email->initialize($configGmail);
-       $this->email->from('info@sap-latam.com');
+       $this->email->from('info@marketinghpe.com');
        $this->email->to('dcnlatam@hpe.com');
        $this->email->subject('Registro de oportunidades DCN');
        $texto = '<!DOCTYPE html>
@@ -209,7 +209,7 @@ class Es extends CI_Controller {
                             'newline'   => "\r\n"
                           );    
         $this->email->initialize($configGmail);
-        $this->email->from('info@sap-latam.com');
+        $this->email->from('info@marketinghpe.com');
         $this->email->to($email);
         $this->email->subject('Registro de oportunidades DCN');
         $texto = '<!DOCTYPE html>
