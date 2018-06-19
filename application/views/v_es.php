@@ -35,7 +35,7 @@
 						<p>HPE Datacenter Networking Latinoam&eacute;rica</p>
 					</div>
 				</div>
-				<div class="col-xs-12 text-right">
+				<div class="col-xs-12 text-right" style="display: none;">
 					<div class="mdl-idioma">
 						<select class="selectpicker" id="idioma"  name="idioma" onchange="cambiarIdioma()">
 							<option value="Español">Espa&ntilde;ol</option>
@@ -44,7 +44,7 @@
 						</select>
     				</div>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6 m-t-20">
 					<div class="contenido-principal">
 						<h2 class="js-title">Registro de Oportunidades HPE DCN LAT</h2>
 						<h2 class="subtitle">Queremos ayudarte a acelerar tus ventas y a ganar m&aacute;s puntos.</h2>
@@ -52,26 +52,11 @@
 						<small><strong>Nota: </strong>Para poder participar deber&aacute;s estar registrado en en el programa Engage & Grow</small>
 					</div>
 					<div>
-						<h2 class="subtitle">HPE Data Center Networking</h2>
+						<h2 class="subtitle">¿Por qu&eacute; HPE Data Center Networking&#63;</h2>
 						<p>Las organizaciones quieren arquitecturas de red que sean abiertas y programables y que estén integradas en sus pilas tecnológicas de computación, almacenamiento y nube. El portafolio de redes de centro de datos HPE ofrece estas capacidades para m&uacute;ltiples segmentos y casos de uso.</p>
 					</div>
 					<div class="contenido m-t-15">
 						<img src="<?php echo RUTA_IMG?>logo/cuadro-dcn.png">
-						<!-- <h2 class="subtitle">Hybrid IT</h2>
-						<p>Data Center Networking</p>
-						<div class="contenido-partner right inline">
-							<div class="partner-left">
-								<img src="<?php echo RUTA_IMG?>logo_hpe.png">
-							</div>
-							<div class="partner-right">
-								<small><strong>Conecta Servidores, Almacenamiento</strong></small>
-								<ul>
-									<li>Servers</li>
-									<li>Storage</li>
-									<li>Hyper-Converged Systems</li>
-								</ul>
-							</div>
-						</div> -->
 					</div>
 				</div>
 				<form class="formulario col-sm-6 col-xs-12 m-t-20">
@@ -94,7 +79,7 @@
 				    </div>
 				     <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="rol">Rol</label> -->
-					    <input type="text" class="form-control" id="rol" placeholder="Rol" onchange="validarCampos()">
+					    <input type="text" class="form-control" id="rol" placeholder="Cargo" onchange="validarCampos()">
 				    </div>
 				    <div class="form-group col-xs-12 p-0">
 					    <!-- <label for="canal">Nombre del Canal</label> -->

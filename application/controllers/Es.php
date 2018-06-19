@@ -85,7 +85,7 @@ class Es extends CI_Controller {
        $this->email->initialize($configGmail);
        $this->email->from('info@marketinghpe.com');
        // $this->email->to('dcnlatam@hpe.com');
-       $this->email->to('jose.minayac15@gmail.com');
+       $this->email->to('jminaya@brainblue.com');
        $this->email->subject('Registro de oportunidades DCN');
        $texto = '<!DOCTYPE html>
                   <html>
@@ -239,13 +239,13 @@ class Es extends CI_Controller {
                             <td>
                                 <table style="width: 500px;">
                                     <tr>
-                                        <td style="text-align: center;padding: 25px;"><font style="font-family: arial;font-size: 24px;font-weight: bold;">Tu registro ha sido enviado satisfactoriamente.</font></td>
+                                        <td style="text-align: center;padding: 25px;"><font style="font-family: arial;font-size: 24px;font-weight: bold;color: #000000;">Tu registro ha sido enviado satisfactoriamente.</font></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center;padding: 0 25px;"><font style="font-family: arial;font-size: 16px;">Nos pondremos en contacto contigo a la brevedad</font></td>
+                                        <td style="text-align: center;padding: 0 25px;"><font style="font-family: arial;font-size: 16px;color: #000000;">Nos pondremos en contacto contigo a la brevedad</font></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center;padding-bottom: 20px;"><font style="font-family: arial;font-size: 12px;">Equipo DCN Latinoamerica</font></td>
+                                        <td style="text-align: center;padding-bottom: 20px;"><font style="font-family: arial;font-size: 12px;color: #000000;">Equipo DCN Latinoamerica</font></td>
                                     </tr>
                                 </table>
                               </td>
